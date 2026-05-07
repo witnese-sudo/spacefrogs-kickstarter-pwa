@@ -26,17 +26,22 @@
         Enter a premium tactical sci-fi universe where frog-born biomech heroes
         hold the line against the Θ9 machine threat.
       </p>
+
       <div class="actions">
         <a href="#pledges" class="btn primary">Back the Mission</a>
-        <a href="#codex" class="btn">Join the Signal</a>
+        <button class="btn" id="scanButton">Signal Scan</button>
+      </div>
+
+      <div class="scan-output" id="scanOutput">
+        SIGNAL WAITING // TAP SCAN
       </div>
     </section>
 
     <section class="section card" id="what">
       <h2>What is SpaceFrogs?</h2>
       <p>
-        A cinematic tactical franchise combining tabletop missions, collectible
-        hero figures, codex lore, digital game potential and premium merch.
+        SPACEFROGS is a cinematic tactical franchise combining tabletop missions,
+        collectible hero figures, codex lore, digital game potential and premium merch.
       </p>
     </section>
 
@@ -51,15 +56,27 @@
     </section>
 
     <section class="section" id="heroes">
-      <h2>Meet the Heroes</h2>
-      <div class="cards">
-        <article>Leader / Command</article>
-        <article>Ranger / Recon</article>
-        <article>Heavy / Support</article>
-        <article>Tech / Specialist</article>
-        <article>Sniper / Precision</article>
-        <article>Assault / Breach</article>
+      <h2>Choose Your Frog</h2>
+      <p class="section-intro">
+        Select a class to preview its combat identity.
+      </p>
+
+      <div class="hero-selector">
+        <button data-class="leader" class="hero-tab active">Leader</button>
+        <button data-class="ranger" class="hero-tab">Ranger</button>
+        <button data-class="heavy" class="hero-tab">Heavy</button>
+        <button data-class="tech" class="hero-tab">Tech</button>
+        <button data-class="sniper" class="hero-tab">Sniper</button>
+        <button data-class="assault" class="hero-tab">Assault</button>
       </div>
+
+      <article class="hero-panel" id="heroPanel">
+        <p class="eyebrow">Leader / Command</p>
+        <h3>Controlled authority. Squad-core presence.</h3>
+        <p>
+          The Leader holds the mission line, stabilizes the squad and commands the first breach.
+        </p>
+      </article>
     </section>
 
     <section class="section threat" id="theta9">
@@ -79,11 +96,34 @@
 
     <section class="section" id="pledges">
       <h2>Pledge Tiers</h2>
-      <div class="cards">
-        <article>Signal Scout</article>
-        <article>First Contact</article>
-        <article>Hero Squad</article>
-        <article>Founder Codex</article>
+      <p class="section-intro">
+        Early structure for the Kickstarter reward ladder.
+      </p>
+
+      <div class="pledge-grid">
+        <article class="pledge-card">
+          <p class="eyebrow">Digital</p>
+          <h3>Signal Scout</h3>
+          <p>Digital wallpapers, codex preview and supporter signal access.</p>
+        </article>
+
+        <article class="pledge-card featured">
+          <p class="eyebrow">Core</p>
+          <h3>First Contact</h3>
+          <p>Starter mission pack, cards, tokens, map and quickstart rules.</p>
+        </article>
+
+        <article class="pledge-card">
+          <p class="eyebrow">Premium</p>
+          <h3>Hero Squad</h3>
+          <p>Core pack plus expanded hero content and collectible upgrade path.</p>
+        </article>
+
+        <article class="pledge-card">
+          <p class="eyebrow">Collector</p>
+          <h3>Founder Codex</h3>
+          <p>Premium lore, exclusive art, founder recognition and archive content.</p>
+        </article>
       </div>
     </section>
 
@@ -96,7 +136,10 @@
 
     <section class="section final">
       <h2>Join the Signal</h2>
-      <a href="#home" class="btn primary">Back SPACEFROGS</a>
+      <p>
+        Back the first mission. Help awaken the Frogverse.
+      </p>
+      <a href="#pledges" class="btn primary">Back SPACEFROGS</a>
     </section>
   </main>
 
