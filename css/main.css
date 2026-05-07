@@ -110,3 +110,62 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+/* v0.2.1 — mobile polish */
+
+.section {
+  scroll-margin-top: 92px;
+}
+
+.scan-output {
+  max-width: 100%;
+  font-size: 0.68rem !important;
+  line-height: 1.35;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.hero .actions {
+  align-items: center;
+}
+
+#scanButton {
+  min-width: 140px;
+}
+
+.hero-selector {
+  gap: 8px;
+}
+
+.hero-tab {
+  font-size: 0.82rem;
+  padding: 0 10px;
+}
+
+@media (max-width: 430px) {
+  .section {
+    scroll-margin-top: 104px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 22vw !important;
+    line-height: 0.86 !important;
+  }
+
+  .scan-output {
+    margin-top: 12px;
+    font-size: 0.64rem !important;
+  }
+
+  .hero-selector {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-tab {
+    min-height: 38px;
+    font-size: 0.78rem;
+  }
+}
