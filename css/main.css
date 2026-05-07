@@ -265,4 +265,24 @@ h2 {
     width: min(620px, calc(100% - 24px));
     transform: translateX(-50%);
   }
+}/* v0.1.1 — mobile hero title fix */
+.hero h1 {
+  font-size: clamp(2.55rem, 12.5vw, 6.2rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  max-width: 100%;
+  overflow-wrap: normal;
+  white-space: normal;
+}
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: clamp(2.15rem, 10.5vw, 4rem);
+    letter-spacing: -0.045em;
+  }
+
+  .hero {
+    min-height: 70vh;
+    padding: 22px 18px;
+  }
 }
