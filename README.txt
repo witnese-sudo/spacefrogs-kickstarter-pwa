@@ -1,19 +1,28 @@
-SPACEFROGS WEBSITE v1.2 — VISIBLE VERSION BADGE
+SPACEFROGS WEBSITE v1.3 — NETLIFY FORMS SIGNUP
 
-This replaces v1.1.
+This replaces v1.2.
 
-Main upgrades:
-- Adds visible fixed version badge:
-  SPACEFROGS HQ // v1.2
-- Updates Playtest Control Panel marker to v1.2
-- Keeps First Signal FAQ from v1.1
-- Keeps v1.0 master structure
+Main practical upgrade:
+- Converts Launch List placeholder into a real Netlify Forms form:
+  * name / callsign
+  * email
+  * interest type
+  * region
+  * optional message
+- Adds bot-field honeypot spam protection
+- Adds /success.html confirmation page
+- Updates visible version badge to v1.3
+- Updates Playtest Control Panel marker to v1.3
 
-Why:
-- Makes it easy to confirm which version is live after GitHub → Netlify auto-deploy.
+After GitHub commit and Netlify deploy:
+1. Open the live site.
+2. Submit a test signup.
+3. In Netlify, go to Forms.
+4. Look for form: spacefrogs-launch-signal.
+5. If the test appears, the signup backend is active.
 
-GitHub workflow:
-1. Upload/replace index.html and README.txt in repo root.
-2. Commit directly to main.
-3. Netlify auto-deploys.
-4. Check bottom-right version badge on the live page.
+Netlify settings remain:
+- Branch: main
+- Base directory: blank
+- Build command: blank
+- Publish directory: .
