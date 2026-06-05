@@ -1,21 +1,29 @@
-SPACEFROGS WEBSITE v0.7 — KICKSTARTER SIGNAL
+SPACEFROGS WEBSITE v1.0 — LAUNCH DRAFT MASTER
 
-This replaces v0.6.
+This replaces v0.7 as the first clean launch draft.
 
-Main upgrades:
-- Adds Kickstarter Signal / Coming Soon section
-- Adds Kickstarter Soon CTA in hero
-- Adds Backer Promise block
-- Adds Launch CTA copy box
-- Keeps:
-  * no-translate brand protection
-  * Playtest Control Panel
-  * Press Signal
-  * Visual Launch Slots
-  * Road to Kickstarter
+Includes:
+- No-translate brand protection
+- Hero + core CTA
+- What is SpaceFrogs?
+- How it plays
+- Playtest Control Panel
+- First Contact Core Box
+- Visual Launch Slots
+- Press Signal
+- Wave 1 product path
+- Road to Kickstarter
+- Kickstarter Signal / Coming Soon
+- Founder Signal
+- Launch List placeholder
 
-Upload:
-1. Netlify project grand-semifreddo-730b1d → Deploys
-2. Drag this ZIP into manual deploy area
-3. Wait for Published
-4. Leave DNS alone while propagation continues
+GitHub workflow:
+1. Upload/replace index.html and README.txt in the repo root.
+2. Commit directly to main.
+3. Netlify auto-deploys from GitHub.
+
+Netlify settings:
+- Branch: main
+- Base directory: blank
+- Build command: blank
+- Publish directory: .
