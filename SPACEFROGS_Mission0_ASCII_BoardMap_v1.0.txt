@@ -1,0 +1,40 @@
+SPACEFROGS™ MISSION 0 — ASCII BOARD MAP v1.0
+
+12×12 STARTER GRID
+
+LEGEND
+F = Frog Deployment
+M = Watcher Drone Start
+R = Relay Objective
+C = Cover / Ruin / Root / Broken Tech
+. = Open Terrain
+
+       A B C D E F G H I J K L
+12     . . . M . . . . M . . .
+11     . C . . . . . . . . C .
+10     . . . . M . . M . . . .
+09     . . C . . . . . . C . .
+08     . . . . . . . . . . . .
+07     . . . C . R R . C . . .
+06     . . . C . R R . C . . .
+05     . . . . . . . . . . . .
+04     . C . . . . . . . . C .
+03     . . . . . . . . . . . .
+02     . . F F . . . . F F . .
+01     . . F F . . . . F F . .
+
+RECOMMENDED START
+Leader: D2
+Ranger: C1 or I1
+Tech Specialist: J2 or D1
+
+WATCHER DRONES
+Drone 1: D12
+Drone 2: E10
+Drone 3: H10 or I12
+
+RELAY
+F6, G6, F7, G7
+
+EXTRACTION
+Return to Frog deployment edge after Relay is decoded.
