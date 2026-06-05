@@ -1,26 +1,34 @@
-SPACEFROGS MISSION 0 FEEDBACK KIT v1.0
+SPACEFROGS WEBSITE v1.9 — MISSION 0 FEEDBACK PAGE
 
-No-deploy / deploy-later kit.
+This replaces v1.8.
 
-Included:
+Main practical upgrade:
+- Adds mission0-feedback.html
+- Adds Feedback menu item
+- Adds Mission 0 feedback CTA in Mission 0 section
+- Adds hidden Netlify detection form for spacefrogs-mission0-feedback
+- Includes feedback CSV template and analysis notes
+- Updates version badge to v1.9
+- Updates Playtest Control Panel marker to v1.9
+
+Files to upload to GitHub root:
+- index.html
 - mission0-feedback.html
+- README.txt
 - SPACEFROGS_Mission0_Feedback_CSV_Template_v1.0.csv
 - SPACEFROGS_Mission0_Feedback_AnalysisNotes_v1.0.md
-- README.txt
 
-Purpose:
-This prepares the next practical layer:
-Mission 0 feedback capture.
-
-When Netlify deploys are available again:
-1. Add mission0-feedback.html to GitHub root.
-2. Link to it from the main site.
-3. Deploy.
-4. Test Netlify Forms:
+After deploy:
+1. Confirm badge: SPACEFROGS HQ // v1.9
+2. Open mission0-feedback.html
+3. Submit a test feedback form
+4. Check Netlify → Forms for:
    spacefrogs-mission0-feedback
 
-Current project status:
-- Website core: 100%
+Current locked stack:
+- Website core: live
 - Signup backend: locked
-- Mission 0 content: 100%
-- Feedback capture: prepared
+- Consent: locked
+- Welcome Pack: live
+- Mission 0: live
+- Mission 0 Feedback: v1.9 deploy target
