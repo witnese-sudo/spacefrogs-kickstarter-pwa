@@ -1,25 +1,32 @@
-SPACEFROGS WEBSITE v1.6 — CONSENT + PRIVACY SIGNAL
+SPACEFROGS WEBSITE v1.7 — PLAYTESTER WELCOME PACK
 
-This replaces v1.5.
+This replaces v1.6.
+
+Main practical upgrade:
+- Adds Playtester Welcome Pack section
+- Adds welcome message copy for new signups
+- Adds next transmission checklist
+- Adds Welcome nav item
+- Updates version badge to v1.7
+- Updates Playtest Control Panel marker to v1.7
 
 Why:
-- The signup backend now works.
-- Since the form collects emails, v1.6 adds a clear consent checkbox and privacy note.
+- Signup backend is already locked.
+- The next practical layer is what happens after someone signs up.
 
-Main upgrades:
-- Adds required consent checkbox to Launch List form
-- Adds consent field to hidden Netlify form detection
-- Adds Privacy Signal note under the form
-- Updates version badge to v1.6
-- Updates Playtest Control Panel marker to v1.6
-- Keeps AJAX no-redirect form fix from v1.5
+Recommended manual workflow:
+1. New signup lands in Netlify → Forms.
+2. Open submission.
+3. Confirm consent = yes.
+4. Copy the Welcome Message from the site/README.
+5. Reply manually by email until automation is connected.
 
-Files needed in GitHub:
-- index.html
-- README.txt
+Next build candidate:
+- SPACEFROGS Quickstart Mission 0 — First Contact page/PDF
+- Or email automation / Form Notifications setup
 
-After GitHub commit and Netlify deploy:
-1. Open the working Netlify URL.
-2. Confirm badge: SPACEFROGS HQ // v1.6
-3. Submit a test with the consent checkbox checked.
-4. Check Netlify → Forms → spacefrogs-launch-signal.
+GitHub workflow:
+1. Upload/replace index.html and README.txt.
+2. Commit to main.
+3. Netlify auto-deploys.
+4. Confirm badge: SPACEFROGS HQ // v1.7
