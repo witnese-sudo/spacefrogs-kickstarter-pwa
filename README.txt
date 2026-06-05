@@ -1,29 +1,32 @@
-SPACEFROGS WEBSITE v1.0 — LAUNCH DRAFT MASTER
+SPACEFROGS WEBSITE v1.1 — FIRST SIGNAL FAQ
 
-This replaces v0.7 as the first clean launch draft.
+This replaces v1.0.
 
-Includes:
-- No-translate brand protection
-- Hero + core CTA
-- What is SpaceFrogs?
-- How it plays
-- Playtest Control Panel
-- First Contact Core Box
-- Visual Launch Slots
-- Press Signal
-- Wave 1 product path
-- Road to Kickstarter
-- Kickstarter Signal / Coming Soon
-- Founder Signal
-- Launch List placeholder
+Main upgrades:
+- Adds First Signal FAQ section
+- Adds FAQ nav item
+- Answers:
+  * Is this playable now?
+  * Is this a video game?
+  * When is Kickstarter?
+  * What is FrogLab?
+  * What are MachineUnits09?
+  * How can I help?
+- Keeps v1.0 master structure:
+  * Hero + CTA
+  * What is SpaceFrogs?
+  * How it plays
+  * Playtest Control Panel
+  * First Contact Core Box
+  * Visual Launch Slots
+  * Press Signal
+  * Wave 1 product path
+  * Road to Kickstarter
+  * Kickstarter Signal
+  * Founder Signal
+  * Launch List
 
 GitHub workflow:
-1. Upload/replace index.html and README.txt in the repo root.
+1. Upload/replace index.html and README.txt in repo root.
 2. Commit directly to main.
-3. Netlify auto-deploys from GitHub.
-
-Netlify settings:
-- Branch: main
-- Base directory: blank
-- Build command: blank
-- Publish directory: .
+3. Netlify auto-deploys.
