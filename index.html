@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SPACEFROGS™ — Launch Draft Master v1.7</title>
+  <title>SPACEFROGS™ — Launch Draft Master v1.8</title>
   <meta name="description" content="SPACEFROGS™ is a tactical co-op sci-fi board game with awakened amphibian commandos, living biotech armor, modular terrain and MachineUnits09 opposition. Join the first playtest squad before Kickstarter.">
   <style>
     :root{--bg:#020504;--green:#55ff99;--cyan:#55e8ff;--violet:#b36bff;--amber:#ffcc66;--red:#ff5c77;--text:#ecfff5;--muted:#9fbfb2;--line:rgba(85,255,153,.28);--cyanline:rgba(85,232,255,.25);--violetline:rgba(179,107,255,.27)}
@@ -139,6 +139,39 @@
     }
     .signal-checklist b{display:block;color:var(--amber);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
 
+
+    .mission-pack{
+      border:1px solid rgba(255,204,102,.36);
+      background:linear-gradient(180deg,rgba(255,204,102,.08),rgba(7,18,15,.84));
+      border-radius:26px;
+      padding:26px;
+      box-shadow:0 24px 90px rgba(0,0,0,.36),inset 0 0 42px rgba(255,204,102,.04);
+    }
+    .rule-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:22px;
+    }
+    .rule-card{
+      border:1px solid rgba(85,232,255,.22);
+      border-radius:18px;
+      padding:16px;
+      background:rgba(85,232,255,.045);
+      color:var(--muted);
+    }
+    .rule-card b{display:block;color:var(--cyan);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+    .mission-sheet{
+      margin-top:24px;
+      border:1px solid rgba(85,255,153,.24);
+      border-radius:22px;
+      padding:20px;
+      background:rgba(85,255,153,.045);
+    }
+    .mission-sheet table{width:100%;border-collapse:collapse;margin-top:12px;color:var(--muted)}
+    .mission-sheet th,.mission-sheet td{border-bottom:1px solid rgba(85,255,153,.16);padding:10px;text-align:left;vertical-align:top}
+    .mission-sheet th{color:var(--green);text-transform:uppercase;letter-spacing:.06em}
+
     @media (max-width:940px){.hero-grid,.grid2,.contact-grid{grid-template-columns:1fr}.cards,.grid4,.timeline,.showcase,.feedback-list{grid-template-columns:1fr}nav{display:none}.signup,.form-grid{grid-template-columns:1fr}button{width:100%}.visual{min-height:420px}}
   </style>
 </head>
@@ -155,13 +188,13 @@
   <input name="consent">
 </form>
 
-<div class="version-badge">SPACEFROGS HQ <span>//</span> v1.7</div>
-<header><div class="wrap nav"><div class="brand"><span class="seal">🐸</span><span>SPACEFROGS™</span></div><nav><a href="#what">What</a><a href="#game">Game</a><a href="#playtest">Playtest</a><a href="#welcome">Welcome</a><a href="#corebox">Core Box</a><a href="#press">Press</a><a href="#kickstarter">Kickstarter</a><a href="#faq">FAQ</a><a href="#launch">Launch</a></nav></div></header>
+<div class="version-badge">SPACEFROGS HQ <span>//</span> v1.8</div>
+<header><div class="wrap nav"><div class="brand"><span class="seal">🐸</span><span>SPACEFROGS™</span></div><nav><a href="#what">What</a><a href="#game">Game</a><a href="#playtest">Playtest</a><a href="#welcome">Welcome</a><a href="#mission0">Mission 0</a><a href="#corebox">Core Box</a><a href="#press">Press</a><a href="#kickstarter">Kickstarter</a><a href="#faq">FAQ</a><a href="#launch">Launch</a></nav></div></header>
 <main>
 <section class="hero"><div class="wrap hero-grid"><div><div class="kicker">Official HQ // Pre-Kickstarter Signal</div><h1>Wake the Frog. Break the Machine.</h1><p class="lead">SPACEFROGS™ is a tactical co-op sci-fi board game where awakened amphibian commandos breach hostile battlefields, decode machine protocols and fight back with living biotech armor.</p><div class="actions"><a class="btn" href="#playtest">Join Playtest Squad</a><a class="btn secondary" href="#corebox">First Contact Core Box</a><a class="btn red" href="#kickstarter">Kickstarter Soon</a></div></div><aside class="visual"><div class="frog-silhouette"></div><div class="visual-label"><b>Hero visual placeholder</b>Frog commander / core box render slot</div></aside></div></section>
 <section id="what"><div class="wrap"><h2>What is SpaceFrogs?</h2><p class="lead">A premium sci-fi board game universe about living signals fighting dead systems. Players control elite Frog operators against MachineUnits09 — a cold digital threat network that hunts, adapts and tries to turn life into predictable behavior.</p><div class="cards"><article class="card"><h3>Frog-first operators</h3><p>Compact amphibian commandos with emerald visor light, wet-grip movement and role-specific silhouettes.</p></article><article class="card"><h3>Living armor</h3><p>Frog//Skin is a living biotech interface between frog, suit, signal, energy, biology and battlefield.</p></article><article class="card"><h3>MachineUnits09</h3><p>Θ9 drones, hounds, towers, nodes, constructs and bosses act like a pressure system — not just enemies.</p></article></div></div></section>
 <section id="game"><div class="wrap"><h2>How it plays</h2><p class="lead">Fast tactical miniatures combat with mission objectives, role abilities, modular boards, environmental triggers and AI-driven opposition.</p><div class="cards"><article class="card"><h3>Advance / Secure</h3><p>Weapons up, sectors covered, entry pressure and overwatch timing.</p></article><article class="card"><h3>Scan / Decode</h3><p>Blips, scanner reads, protocol cards and mission timers create pressure before the machine reveals itself.</p></article><article class="card"><h3>Hold / Extract</h3><p>Complete the objective, keep the squad alive and get out before the machine closes the loop.</p></article></div></div></section>
-<section id="playtest"><div class="wrap panel playtest"><div class="kicker">Playtest Control Panel // v1.7</div><h2>Join the First Playtest Squad</h2><p class="lead">Help test the first public gameplay loop before Kickstarter: movement, mission pressure, scanner logic, enemy AI and the feel of the First Contact Core Box.</p><div class="grid2"><div class="mission-card"><b>Playtest Mission</b><h3>Quickstart Mission 0 — First Contact</h3><ul><li>Learn movement, line of sight, overwatch and objective pressure.</li><li>Face Watcher Drones and early Pursuit Hound behavior.</li><li>Test whether the intro mission feels fast, clear and cinematic.</li></ul></div><div class="mission-card"><b>Feedback we need</b><div class="feedback-list"><div><strong>Clarity</strong>Where did rules feel confusing?</div><div><strong>Pacing</strong>Did the mission move fast enough?</div><div><strong>Threat</strong>Did MachineUnits09 feel dangerous?</div><div><strong>Fun</strong>What moment felt most cinematic?</div></div></div></div><div class="actions" style="margin-top:24px"><a class="btn" href="#launch">Sign up via Netlify Form</a><a class="btn secondary" href="#corebox">View Core Box baseline</a></div></div></section>
+<section id="playtest"><div class="wrap panel playtest"><div class="kicker">Playtest Control Panel // v1.8</div><h2>Join the First Playtest Squad</h2><p class="lead">Help test the first public gameplay loop before Kickstarter: movement, mission pressure, scanner logic, enemy AI and the feel of the First Contact Core Box.</p><div class="grid2"><div class="mission-card"><b>Playtest Mission</b><h3>Quickstart Mission 0 — First Contact</h3><ul><li>Learn movement, line of sight, overwatch and objective pressure.</li><li>Face Watcher Drones and early Pursuit Hound behavior.</li><li>Test whether the intro mission feels fast, clear and cinematic.</li></ul></div><div class="mission-card"><b>Feedback we need</b><div class="feedback-list"><div><strong>Clarity</strong>Where did rules feel confusing?</div><div><strong>Pacing</strong>Did the mission move fast enough?</div><div><strong>Threat</strong>Did MachineUnits09 feel dangerous?</div><div><strong>Fun</strong>What moment felt most cinematic?</div></div></div></div><div class="actions" style="margin-top:24px"><a class="btn" href="#launch">Sign up via Netlify Form</a><a class="btn secondary" href="#corebox">View Core Box baseline</a></div></div></section>
 
 <section id="welcome">
   <div class="wrap welcome-pack">
@@ -198,6 +231,63 @@ Wake the Frog. Break the Machine.</div>
           <div><b>04 // Prepare</b>Next file to build: Quickstart Mission 0 — First Contact PDF/page.</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="mission0">
+  <div class="wrap mission-pack">
+    <div class="kicker" style="color:var(--amber)">Quickstart Mission 0 // First Contact</div>
+    <h2>First Playtest Mission</h2>
+    <p class="lead">A lightweight intro mission for early testers. Goal: prove the basic loop before adding more rules, art, terrain and campaign depth.</p>
+
+    <div class="grid2">
+      <div class="mission-card">
+        <b>Mission Brief</b>
+        <h3>Relay breach at the swamp edge</h3>
+        <ul>
+          <li>A small Frog fireteam reaches a corrupted signal relay.</li>
+          <li>MachineUnits09 are already scanning the zone.</li>
+          <li>The Frogs must decode the relay and extract before escalation locks the battlefield.</li>
+        </ul>
+      </div>
+      <div class="mission-card">
+        <b>Test Goal</b>
+        <h3>Make the first 20 minutes clear</h3>
+        <ul>
+          <li>Do players understand movement and range quickly?</li>
+          <li>Does the objective create pressure?</li>
+          <li>Do Watcher Drones feel like a machine threat?</li>
+          <li>Does the session end with a cinematic moment?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rule-grid">
+      <div class="rule-card"><b>Players</b>1–4 players, co-op PvE.</div>
+      <div class="rule-card"><b>Time</b>20–35 minutes for first test.</div>
+      <div class="rule-card"><b>Board</b>Small modular battlefield, approx. 12×12 zones or equivalent starter layout.</div>
+      <div class="rule-card"><b>Frog Units</b>Leader, Ranger, Tech Specialist.</div>
+      <div class="rule-card"><b>Enemy Units</b>3 Watcher Drones, optional Pursuit Hound if players learn fast.</div>
+      <div class="rule-card"><b>Win Condition</b>Decode relay, survive escalation and extract at least 2 Frogs.</div>
+    </div>
+
+    <div class="mission-sheet">
+      <h3>Mission Loop</h3>
+      <table>
+        <tr><th>Phase</th><th>What happens</th><th>What we test</th></tr>
+        <tr><td>01 // Deploy</td><td>Frogs enter from the swamp edge. Place relay objective near center.</td><td>Setup clarity and first-turn confidence.</td></tr>
+        <tr><td>02 // Contact</td><td>Watcher Drones patrol, scan or advance toward noise.</td><td>Enemy AI readability.</td></tr>
+        <tr><td>03 // Decode</td><td>Tech or adjacent Frog spends actions to decode the relay.</td><td>Objective pressure and team roles.</td></tr>
+        <tr><td>04 // Escalate</td><td>After the first decode progress, drones become more aggressive.</td><td>Threat curve and pacing.</td></tr>
+        <tr><td>05 // Extract</td><td>Frogs must leave through the entry edge or an extraction marker.</td><td>Endgame tension and cinematic finish.</td></tr>
+      </table>
+    </div>
+
+    <div class="actions" style="margin-top:24px">
+      <a class="btn warn" href="#launch">Join Mission 0 Playtest</a>
+      <a class="btn secondary" href="#welcome">Read Welcome Pack</a>
     </div>
   </div>
 </section>
