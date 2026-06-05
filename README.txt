@@ -1,24 +1,15 @@
-SPACEFROGS MISSION 0 BOARD LAYOUT v1.0
+SPACEFROGS MISSION 0 UNIT CARDS v1.0
 
 Included:
-- SPACEFROGS_Mission0_BoardLayout_Setup_v1.0.md
-- SPACEFROGS_Mission0_ASCII_BoardMap_v1.0.txt
-- SPACEFROGS_Mission0_TableSetupCard_v1.0.md
+- SPACEFROGS_Mission0_QuickUnitCards_v1.0.md
+- SPACEFROGS_WatcherDrone_AI_Card_v1.0.md
+- SPACEFROGS_Mission0_OnePageQuickRules_v1.0.md
 
 Purpose:
-This pack gives Mission 0 a concrete board setup.
+This pack makes Mission 0 playable without a full rulebook.
 
-Now Mission 0 has:
-- Mission sheet
-- Feedback form copy
-- Email to playtesters
-- Unit cards
-- Quick rules
-- Watcher Drone AI
-- Board layout
-- Setup checklist
-
-Next build candidate:
-- Printable PDF mission pack
-- Feedback form page for website v1.9
-- Simple visual board PNG/SVG
+Next suggested build:
+- Printable PDF layout
+- Mission 0 board layout
+- Feedback form page
+- Netlify v1.9 when deploy credits are available
