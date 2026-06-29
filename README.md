@@ -13,6 +13,23 @@ The app should feel like:
 - Kickstarter preview page
 - installable PWA
 
+## Playable FPS Prototype
+
+The first browser-playable FPS vertical slice is now part of the repo:
+
+- `play-sector7f.html` — public launcher page for the Sector 7F FPS prototype
+- `fps-prototype.html` — standalone playable Sector 7F browser FPS prototype
+- `docs/fps/SECTOR7F_FPS_CANON_RULES.md` — locked Sector 7F FPS canon rules
+- `docs/fps/SECTOR7F_FPS_VERTICAL_SLICE.md` — gameplay and arena design direction
+- `docs/fps/TRIPO_GLB_AND_GROK_PROMPTS.md` — GLB / Tripo / Grok asset prompt pack
+- `docs/fps/UNREAL_IMPORT_PIPELINE.md` — Unreal Engine import and blockout plan
+
+Sector 7F FPS canon:
+
+**Frogs first. Biotech second. Machine third.**
+
+The FPS loop is: choose Frog operator, enter the wet biotech arena, hold/scan the central reactor, survive Θ9 waves, clear the pressure and prepare the Unreal greybox.
+
 ## Core Product
 
 First Contact Pack may include:
@@ -54,6 +71,9 @@ These files define the source of truth:
 - SPACEFROGS_PROJECT_BRIEF.md
 - CANON_STYLE_GUIDE.md
 - DEVELOPMENT_TASKS.md
+- docs/fps/SECTOR7F_FPS_CANON_RULES.md
+- docs/fps/SECTOR7F_FPS_VERTICAL_SLICE.md
+- docs/fps/CODEX_BUILD_TASKS.md
 
 ## Build Target
 
@@ -64,5 +84,7 @@ Mobile-first PWA using:
 - js/main.js
 - manifest.json
 - service-worker.js
+- play-sector7f.html
+- fps-prototype.html
 
 No external frameworks for v0.1.
