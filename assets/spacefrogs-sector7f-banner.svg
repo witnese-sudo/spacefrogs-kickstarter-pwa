@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SpaceFrogs Sector 7F cinematic banner</title>
+  <desc id="desc">A rain-wet biotech industrial SpaceFrogs Sector 7F banner with neon frog signal silhouettes, bioforge veins, cyan storm light and purple corruption.</desc>
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#55ff99" stop-opacity="0.42"/>
+      <stop offset="0.34" stop-color="#55e8ff" stop-opacity="0.18"/>
+      <stop offset="0.68" stop-color="#b36bff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#020504" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07120f"/>
+      <stop offset="0.48" stop-color="#0b211b"/>
+      <stop offset="1" stop-color="#020504"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="rain" width="56" height="56" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+      <path d="M8 0v42M32 6v50M52 0v34" stroke="#ecfff5" stroke-opacity="0.08" stroke-width="2"/>
+    </pattern>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M0 120V0h120" fill="none" stroke="#55e8ff" stroke-opacity="0.10"/>
+      <path d="M0 60h120M60 0v120" fill="none" stroke="#55ff99" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#020504"/>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <rect width="1600" height="900" fill="url(#rain)" opacity="0.8"/>
+  <rect x="0" y="520" width="1600" height="380" fill="url(#floor)"/>
+  <rect x="0" y="520" width="1600" height="380" fill="url(#grid)" opacity="0.85"/>
+
+  <g opacity="0.62" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M0 650 C170 570 250 708 390 628 S640 520 800 610 1040 760 1210 640 1430 560 1600 606" stroke="#55ff99" stroke-opacity="0.28" stroke-width="10" filter="url(#glow)"/>
+    <path d="M70 760 C230 700 315 810 465 730 S725 642 905 720 1120 820 1290 716 1460 690 1600 730" stroke="#55e8ff" stroke-opacity="0.24" stroke-width="6" filter="url(#glow)"/>
+    <path d="M250 885 C420 740 545 850 720 760 S1020 650 1230 790" stroke="#b36bff" stroke-opacity="0.23" stroke-width="7" filter="url(#glow)"/>
+  </g>
+
+  <g opacity="0.26" fill="none" stroke="#55e8ff" stroke-width="2">
+    <circle cx="800" cy="420" r="260"/>
+    <circle cx="800" cy="420" r="355" stroke-opacity="0.55"/>
+    <circle cx="800" cy="420" r="455" stroke-opacity="0.35"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <path d="M805 210c-116 0-211 72-225 184-9 73 18 151 75 207 49 48 91 70 150 70s101-22 150-70c57-56 84-134 75-207-14-112-109-184-225-184z" fill="#07120f" stroke="#55ff99" stroke-opacity="0.76" stroke-width="4"/>
+    <ellipse cx="690" cy="288" rx="92" ry="68" fill="#0b211b" stroke="#55ff99" stroke-opacity="0.56" stroke-width="3"/>
+    <ellipse cx="920" cy="288" rx="92" ry="68" fill="#0b211b" stroke="#55e8ff" stroke-opacity="0.56" stroke-width="3"/>
+    <path d="M660 386h290c29 0 52 23 52 52v0c0 29-23 52-52 52H660c-29 0-52-23-52-52v0c0-29 23-52 52-52z" fill="#06100d" stroke="#55ff99" stroke-opacity="0.75" stroke-width="4"/>
+    <path d="M650 438h304" stroke="#55ff99" stroke-width="8" stroke-opacity="0.72"/>
+    <circle cx="704" cy="290" r="18" fill="#55ff99"/>
+    <circle cx="906" cy="290" r="18" fill="#55e8ff"/>
+    <path d="M685 548c52 44 190 44 240 0" stroke="#55e8ff" stroke-opacity="0.55" stroke-width="6" fill="none"/>
+  </g>
+
+  <g opacity="0.72" filter="url(#glow)">
+    <path d="M189 355c34-45 74-77 131-72 78 7 118 76 102 144-15 64-71 109-137 107-69-3-116-51-125-109-4-25 3-49 29-70z" fill="#03100c" stroke="#55ff99" stroke-opacity="0.48" stroke-width="3"/>
+    <path d="M1221 323c42-59 98-88 163-67 73 23 101 99 72 160-26 56-90 86-151 70-65-17-101-75-95-133 2-13 5-22 11-30z" fill="#03100c" stroke="#b36bff" stroke-opacity="0.42" stroke-width="3"/>
+    <path d="M1095 615c42-36 92-46 139-18 52 31 64 98 31 146-31 45-94 62-142 34-54-32-70-95-42-141 4-8 8-14 14-21z" fill="#03100c" stroke="#55e8ff" stroke-opacity="0.42" stroke-width="3"/>
+  </g>
+
+  <g opacity="0.8" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-weight="900" letter-spacing="9">
+    <text x="70" y="92" fill="#55ff99" font-size="30">SPACEFROGS™ // FIRST SIGNAL</text>
+    <text x="70" y="132" fill="#9fbfb2" font-size="18" letter-spacing="5">SECTOR 7F • WET BIOFORGE • THE SIGNAL IS LIFE</text>
+    <text x="1160" y="820" fill="#55e8ff" font-size="22" letter-spacing="6">Θ9 BREACH DETECTED</text>
+  </g>
+
+  <rect x="20" y="20" width="1560" height="860" rx="34" fill="none" stroke="#55ff99" stroke-opacity="0.22"/>
+  <rect x="52" y="52" width="1496" height="796" rx="28" fill="none" stroke="#55e8ff" stroke-opacity="0.12" stroke-dasharray="14 18"/>
+</svg>
