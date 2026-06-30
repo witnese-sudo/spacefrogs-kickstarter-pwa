@@ -4,431 +4,186 @@
   <meta charset="utf-8">
   <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SPACEFROGS™ — Launch Draft Master v1.9</title>
-  <meta name="description" content="SPACEFROGS™ is a tactical co-op sci-fi board game with awakened amphibian commandos, living biotech armor, modular terrain and MachineUnits09 opposition. Join the first playtest squad before Kickstarter.">
+  <title>SPACEFROGS™: FIRST SIGNAL — Sector 7F Landing Page</title>
+  <meta name="description" content="SPACEFROGS™: FIRST SIGNAL is a premium frog-first tactical survival universe set inside Sector 7F: five core heroes, five enemy waves and one living Bioforge battlefield.">
   <style>
-    :root{--bg:#020504;--green:#55ff99;--cyan:#55e8ff;--violet:#b36bff;--amber:#ffcc66;--red:#ff5c77;--text:#ecfff5;--muted:#9fbfb2;--line:rgba(85,255,153,.28);--cyanline:rgba(85,232,255,.25);--violetline:rgba(179,107,255,.27)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at 18% 0%,rgba(85,255,153,.18),transparent 32%),radial-gradient(circle at 82% 5%,rgba(85,232,255,.13),transparent 34%),radial-gradient(circle at 50% 92%,rgba(179,107,255,.09),transparent 42%),linear-gradient(180deg,#020504 0%,#06100d 48%,#020504 100%);line-height:1.5}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.026) 0,rgba(255,255,255,.026) 1px,transparent 1px,transparent 5px);opacity:.31;mix-blend-mode:screen;z-index:999}
-    a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
-    header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(2,5,4,.84);backdrop-filter:blur(14px)}
-    .nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:.16em;text-transform:uppercase}
-    .seal{width:42px;height:42px;border:1px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green);box-shadow:0 0 24px rgba(85,255,153,.34),inset 0 0 22px rgba(85,255,153,.12);font-size:1.15rem}
-    nav{display:flex;gap:15px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}nav a:hover{color:var(--green)}
-    .hero{min-height:calc(100vh - 70px);display:grid;align-items:center;padding:78px 0 64px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
-    .kicker{color:var(--green);text-transform:uppercase;letter-spacing:.19em;font-weight:950;font-size:.82rem;margin-bottom:18px}
-    h1{font-size:clamp(3rem,7.1vw,6.8rem);line-height:.88;margin:0 0 24px;text-transform:uppercase;letter-spacing:-.065em;text-shadow:0 0 28px rgba(85,255,153,.2)}
-    h2{font-size:clamp(2.1rem,4vw,3.8rem);margin:0 0 18px;text-transform:uppercase;letter-spacing:-.045em}h3{margin:0 0 10px;text-transform:uppercase;letter-spacing:.06em}
-    p{margin-top:0}.lead{color:var(--muted);font-size:1.12rem;max-width:820px}.hero .lead{font-size:1.2rem;max-width:730px;margin-bottom:28px}
-    .actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border:1px solid var(--green);border-radius:999px;text-decoration:none;font-weight:950;letter-spacing:.055em;text-transform:uppercase;background:rgba(85,255,153,.13);box-shadow:0 0 24px rgba(85,255,153,.14)}
-    .btn.secondary{border-color:rgba(85,232,255,.55);background:rgba(85,232,255,.08);color:var(--cyan)}.btn.warn{border-color:rgba(255,204,102,.65);background:rgba(255,204,102,.1);color:var(--amber)}.btn.red{border-color:rgba(255,92,119,.65);background:rgba(255,92,119,.1);color:var(--red)}
-    .panel{border:1px solid var(--line);background:linear-gradient(180deg,rgba(7,18,15,.94),rgba(5,12,10,.86));border-radius:26px;padding:26px;box-shadow:0 24px 90px rgba(0,0,0,.36),inset 0 0 38px rgba(85,255,153,.045)}
-    .visual{min-height:520px;border-radius:30px;border:1px solid var(--cyanline);position:relative;overflow:hidden;background:radial-gradient(circle at 50% 42%,rgba(85,255,153,.2),transparent 18%),radial-gradient(circle at 70% 35%,rgba(85,232,255,.13),transparent 22%),linear-gradient(135deg,rgba(85,255,153,.08),rgba(179,107,255,.07)),rgba(5,12,10,.86);box-shadow:0 34px 100px rgba(0,0,0,.42),inset 0 0 70px rgba(85,232,255,.06)}
-    .visual:before{content:"";position:absolute;inset:22px;border:1px dashed rgba(85,255,153,.28);border-radius:22px}
-    .frog-silhouette{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:min(360px,72%);aspect-ratio:1/1.18;border-radius:45% 45% 38% 38%;background:radial-gradient(circle at 42% 22%,var(--green) 0 4px,transparent 5px),radial-gradient(circle at 58% 22%,var(--green) 0 4px,transparent 5px),linear-gradient(180deg,rgba(85,255,153,.18),rgba(85,232,255,.08));border:1px solid rgba(85,255,153,.32);box-shadow:0 0 52px rgba(85,255,153,.18),inset 0 0 48px rgba(85,255,153,.06)}
-    .frog-silhouette:before{content:"";position:absolute;left:16%;right:16%;top:27%;height:9%;border:1px solid rgba(85,255,153,.55);border-radius:999px;box-shadow:0 0 18px rgba(85,255,153,.28);background:rgba(85,255,153,.1)}
-    .visual-label{position:absolute;left:26px;bottom:24px;right:26px;color:var(--muted);font-weight:800;letter-spacing:.08em;text-transform:uppercase}.visual-label b{display:block;color:var(--green);font-size:1.25rem}
-    section{padding:74px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{border:1px solid var(--line);background:rgba(7,18,15,.68);border-radius:22px;padding:22px;min-height:188px}.card h3{color:var(--green)}.card p,.muted{color:var(--muted)}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.tile{border:1px solid var(--cyanline);border-radius:20px;padding:18px;background:rgba(85,232,255,.045)}.tile b{display:block;color:var(--cyan);text-transform:uppercase;margin-bottom:8px}
-    .showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.shot{min-height:260px;border:1px solid var(--violetline);border-radius:24px;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;background:radial-gradient(circle at 50% 30%,rgba(85,255,153,.14),transparent 28%),rgba(179,107,255,.045)}.shot b{color:var(--violet);text-transform:uppercase;letter-spacing:.08em}
-    ul{margin:0;padding-left:20px;color:var(--muted)}li{margin:8px 0}.playtest{border-color:rgba(85,255,153,.4);background:linear-gradient(180deg,rgba(85,255,153,.09),rgba(7,18,15,.78))}.kick{border-color:rgba(255,92,119,.38);background:linear-gradient(180deg,rgba(255,92,119,.08),rgba(7,18,15,.82))}
-    .mission-card{border:1px solid rgba(255,204,102,.34);border-radius:22px;padding:22px;background:rgba(255,204,102,.055)}.mission-card b{display:block;color:var(--amber);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
-    .feedback-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}.feedback-list div{border:1px solid rgba(85,255,153,.18);border-radius:16px;padding:14px;background:rgba(255,255,255,.035);color:var(--muted)}.feedback-list strong{display:block;color:var(--green)}
-    .bar{margin-top:24px;border:1px solid rgba(85,255,153,.24);border-radius:999px;height:16px;overflow:hidden;background:rgba(255,255,255,.04)}.bar span{display:block;height:100%;width:72%;background:linear-gradient(90deg,var(--green),var(--cyan));box-shadow:0 0 18px rgba(85,255,153,.3)}
-    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.step{border:1px solid rgba(179,107,255,.25);border-radius:20px;padding:18px;background:rgba(179,107,255,.045)}.step small{display:block;color:var(--violet);font-weight:900;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
-    .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:28px}.copybox{border:1px solid rgba(85,232,255,.25);border-radius:18px;padding:18px;background:rgba(85,232,255,.045);color:var(--muted)}.copybox code{display:block;color:var(--green);font-size:1rem;white-space:normal;word-break:break-word;margin-top:8px}
-    .signup{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:24px;max-width:760px}input{min-height:52px;border:1px solid rgba(85,255,153,.35);border-radius:999px;background:rgba(0,0,0,.28);color:var(--text);padding:0 18px;font:inherit;outline:none}button{min-height:52px;border:1px solid var(--green);border-radius:999px;background:var(--green);color:#021008;padding:0 23px;font-weight:1000;text-transform:uppercase;cursor:pointer}
-    .tiny{color:var(--muted);font-size:.9rem;margin-top:12px}.founder{border-color:rgba(255,204,102,.26);background:linear-gradient(180deg,rgba(255,204,102,.08),rgba(7,18,15,.76))}.quote{font-size:1.35rem;color:var(--text);font-weight:750;max-width:850px}
-    footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);background:rgba(0,0,0,.23)}.footer-grid{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-
-    .version-badge{
-      position:fixed;
-      right:16px;
-      bottom:16px;
-      z-index:30;
-      border:1px solid rgba(85,255,153,.45);
-      background:rgba(2,5,4,.82);
-      color:var(--green);
-      border-radius:999px;
-      padding:8px 12px;
-      font-size:.72rem;
-      font-weight:950;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      box-shadow:0 0 22px rgba(85,255,153,.16);
-      backdrop-filter:blur(10px);
-    }
-    .version-badge span{color:var(--muted)}
-
-
-    select,textarea{
-      border:1px solid rgba(85,255,153,.35);
-      border-radius:18px;
-      background:rgba(0,0,0,.28);
-      color:var(--text);
-      padding:14px 18px;
-      font:inherit;
-      outline:none;
-      width:100%;
-    }
-    textarea{min-height:110px;resize:vertical}
-    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px;max-width:860px}
-    .form-grid .wide{grid-column:1 / -1}
-    .bot-field{display:none}
-
-
-    .consent-row{
-      grid-column:1 / -1;
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-      color:var(--muted);
-      font-size:.92rem;
-      border:1px solid rgba(85,255,153,.18);
-      border-radius:16px;
-      padding:13px 15px;
-      background:rgba(85,255,153,.045);
-    }
-    .consent-row input{
-      width:auto;
-      min-height:auto;
-      margin-top:4px;
-      accent-color:var(--green);
-    }
-    .privacy-note{
-      margin-top:18px;
-      border:1px solid rgba(85,232,255,.2);
-      border-radius:18px;
-      padding:16px;
-      background:rgba(85,232,255,.04);
-      color:var(--muted);
-      font-size:.92rem;
-    }
-    .privacy-note b{color:var(--cyan);text-transform:uppercase;letter-spacing:.06em}
-
-
-    .welcome-pack{
-      border:1px solid rgba(85,255,153,.36);
-      background:linear-gradient(180deg,rgba(85,255,153,.085),rgba(7,18,15,.82));
-      border-radius:26px;
-      padding:26px;
-      box-shadow:0 24px 90px rgba(0,0,0,.36),inset 0 0 42px rgba(85,255,153,.05);
-    }
-    .welcome-copy{
-      border:1px solid rgba(85,232,255,.25);
-      border-radius:20px;
-      padding:18px;
-      background:rgba(85,232,255,.045);
-      color:var(--muted);
-      white-space:pre-wrap;
-      font-size:.98rem;
-    }
-    .signal-checklist{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:14px;
-      margin-top:22px;
-    }
-    .signal-checklist div{
-      border:1px solid rgba(255,204,102,.28);
-      border-radius:18px;
-      padding:16px;
-      background:rgba(255,204,102,.045);
-      color:var(--muted);
-    }
-    .signal-checklist b{display:block;color:var(--amber);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
-
-
-    .mission-pack{
-      border:1px solid rgba(255,204,102,.36);
-      background:linear-gradient(180deg,rgba(255,204,102,.08),rgba(7,18,15,.84));
-      border-radius:26px;
-      padding:26px;
-      box-shadow:0 24px 90px rgba(0,0,0,.36),inset 0 0 42px rgba(255,204,102,.04);
-    }
-    .rule-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px;
-      margin-top:22px;
-    }
-    .rule-card{
-      border:1px solid rgba(85,232,255,.22);
-      border-radius:18px;
-      padding:16px;
-      background:rgba(85,232,255,.045);
-      color:var(--muted);
-    }
-    .rule-card b{display:block;color:var(--cyan);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
-    .mission-sheet{
-      margin-top:24px;
-      border:1px solid rgba(85,255,153,.24);
-      border-radius:22px;
-      padding:20px;
-      background:rgba(85,255,153,.045);
-    }
-    .mission-sheet table{width:100%;border-collapse:collapse;margin-top:12px;color:var(--muted)}
-    .mission-sheet th,.mission-sheet td{border-bottom:1px solid rgba(85,255,153,.16);padding:10px;text-align:left;vertical-align:top}
-    .mission-sheet th{color:var(--green);text-transform:uppercase;letter-spacing:.06em}
-
-
-    .feedback-cta{
-      margin-top:24px;
-      border:1px solid rgba(85,232,255,.28);
-      border-radius:22px;
-      padding:20px;
-      background:linear-gradient(180deg,rgba(85,232,255,.07),rgba(85,255,153,.035));
-    }
-    .feedback-cta b{color:var(--cyan);text-transform:uppercase;letter-spacing:.08em}
-
-    @media (max-width:940px){.hero-grid,.grid2,.contact-grid{grid-template-columns:1fr}.cards,.grid4,.timeline,.showcase,.feedback-list{grid-template-columns:1fr}nav{display:none}.signup,.form-grid{grid-template-columns:1fr}button{width:100%}.visual{min-height:420px}}
+    :root{--bg:#020504;--ink:#ecfff5;--muted:#9fbfb2;--green:#55ff99;--cyan:#55e8ff;--violet:#b36bff;--magenta:#ff4fd8;--amber:#ffcc66;--red:#ff5c77;--line:rgba(85,255,153,.28);--cyanline:rgba(85,232,255,.25);--violetline:rgba(179,107,255,.27);--glass:rgba(7,18,15,.72)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at 14% 0%,rgba(85,255,153,.18),transparent 33%),radial-gradient(circle at 86% 10%,rgba(85,232,255,.15),transparent 34%),radial-gradient(circle at 52% 100%,rgba(179,107,255,.12),transparent 42%),linear-gradient(180deg,#020504 0%,#06100d 48%,#020504 100%);line-height:1.5;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.028) 0,rgba(255,255,255,.028) 1px,transparent 1px,transparent 5px);opacity:.32;mix-blend-mode:screen;z-index:999}body:after{content:"";position:fixed;inset:-20%;pointer-events:none;background:linear-gradient(115deg,transparent 0 38%,rgba(85,232,255,.055) 42%,transparent 46% 100%);animation:storm 9s linear infinite;opacity:.45}@keyframes storm{from{transform:translateX(-12%)}to{transform:translateX(12%)}}
+    a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.eyebrow,.kicker{color:var(--green);text-transform:uppercase;letter-spacing:.19em;font-weight:950;font-size:.82rem;margin-bottom:18px}.amber{color:var(--amber)!important}.cyan{color:var(--cyan)!important}.red{color:var(--red)!important}.violet{color:var(--violet)!important}
+    header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(2,5,4,.84);backdrop-filter:blur(14px)}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:.16em;text-transform:uppercase}.seal{width:42px;height:42px;border:1px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green);box-shadow:0 0 24px rgba(85,255,153,.34),inset 0 0 22px rgba(85,255,153,.12);font-size:1.15rem}nav{display:flex;gap:15px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}nav a:hover{color:var(--green)}
+    section{padding:78px 0}.hero{min-height:calc(100vh - 70px);display:grid;align-items:center;padding:82px 0 70px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}h1{font-size:clamp(3rem,7.1vw,6.8rem);line-height:.88;margin:0 0 24px;text-transform:uppercase;letter-spacing:-.065em;text-shadow:0 0 28px rgba(85,255,153,.2)}h2{font-size:clamp(2.1rem,4vw,3.8rem);margin:0 0 18px;text-transform:uppercase;letter-spacing:-.045em}h3{margin:0 0 10px;text-transform:uppercase;letter-spacing:.06em}p{margin-top:0}.lead{color:var(--muted);font-size:1.12rem;max-width:840px}.hero .lead{font-size:1.22rem;max-width:760px;margin-bottom:28px}.tagline{font-size:clamp(1.2rem,2.4vw,2rem);font-weight:900;color:var(--cyan);text-transform:uppercase;letter-spacing:.025em;margin:0 0 20px}.mini{font-size:.9rem;color:var(--muted)}
+    .actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border:1px solid var(--green);border-radius:999px;text-decoration:none;font-weight:950;letter-spacing:.055em;text-transform:uppercase;background:rgba(85,255,153,.13);box-shadow:0 0 24px rgba(85,255,153,.14)}.btn.secondary{border-color:rgba(85,232,255,.55);background:rgba(85,232,255,.08);color:var(--cyan)}.btn.warn{border-color:rgba(255,204,102,.65);background:rgba(255,204,102,.1);color:var(--amber)}.btn.red{border-color:rgba(255,92,119,.65);background:rgba(255,92,119,.1);color:var(--red)}
+    .panel{border:1px solid var(--line);background:linear-gradient(180deg,rgba(7,18,15,.94),rgba(5,12,10,.86));border-radius:26px;padding:26px;box-shadow:0 24px 90px rgba(0,0,0,.36),inset 0 0 38px rgba(85,255,153,.045)}.visual{min-height:540px;border-radius:30px;border:1px solid var(--cyanline);position:relative;overflow:hidden;background:radial-gradient(circle at 50% 42%,rgba(85,255,153,.2),transparent 18%),radial-gradient(circle at 70% 35%,rgba(85,232,255,.13),transparent 22%),linear-gradient(135deg,rgba(85,255,153,.08),rgba(179,107,255,.07)),rgba(5,12,10,.86);box-shadow:0 34px 100px rgba(0,0,0,.42),inset 0 0 70px rgba(85,232,255,.06)}.visual:before{content:"";position:absolute;inset:22px;border:1px dashed rgba(85,255,153,.28);border-radius:22px}.frog-silhouette{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(360px,72%);aspect-ratio:1/1.18;border-radius:45% 45% 38% 38%;background:radial-gradient(circle at 42% 22%,var(--green) 0 4px,transparent 5px),radial-gradient(circle at 58% 22%,var(--cyan) 0 4px,transparent 5px),linear-gradient(180deg,rgba(85,255,153,.18),rgba(85,232,255,.08));border:1px solid rgba(85,255,153,.32);box-shadow:0 0 52px rgba(85,255,153,.18),inset 0 0 48px rgba(85,255,153,.06)}.frog-silhouette:before{content:"";position:absolute;left:16%;right:16%;top:27%;height:9%;border:1px solid rgba(85,255,153,.55);border-radius:999px;box-shadow:0 0 18px rgba(85,255,153,.28);background:rgba(85,255,153,.1)}.signal-rings{position:absolute;inset:14%;border-radius:50%;border:1px solid rgba(85,232,255,.16);box-shadow:0 0 70px rgba(85,232,255,.12)}.signal-rings:before,.signal-rings:after{content:"";position:absolute;inset:12%;border:1px solid rgba(179,107,255,.18);border-radius:50%}.signal-rings:after{inset:25%;border-color:rgba(255,204,102,.16)}.visual-label{position:absolute;left:26px;bottom:24px;right:26px;color:var(--muted);font-weight:800;letter-spacing:.08em;text-transform:uppercase}.visual-label b{display:block;color:var(--green);font-size:1.25rem}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{border:1px solid var(--line);background:var(--glass);border-radius:22px;padding:22px;min-height:188px}.card h3{color:var(--green)}.card p,.muted{color:var(--muted)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.tile{border:1px solid var(--cyanline);border-radius:20px;padding:18px;background:rgba(85,232,255,.045)}.tile b{display:block;color:var(--cyan);text-transform:uppercase;margin-bottom:8px}.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0}.stat{border:1px solid rgba(85,255,153,.24);border-radius:18px;padding:16px;background:rgba(85,255,153,.055)}.stat b{display:block;color:var(--green);font-size:1.6rem;line-height:1}.stat span{color:var(--muted);text-transform:uppercase;font-size:.75rem;font-weight:900;letter-spacing:.08em}.operator{min-height:172px}.operator small{display:block;color:var(--cyan);font-weight:950;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}.operator h3{color:var(--green)}
+    .threat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.threat{border:1px solid rgba(255,92,119,.3);border-radius:20px;padding:18px;background:linear-gradient(180deg,rgba(255,92,119,.065),rgba(7,18,15,.68));min-height:142px}.threat b{display:block;color:var(--red);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}.boss{border-color:rgba(255,204,102,.42);background:linear-gradient(180deg,rgba(255,204,102,.09),rgba(7,18,15,.84))}.boss h3{color:var(--amber)}
+    ul{margin:0;padding-left:20px;color:var(--muted)}li{margin:8px 0}.playtest{border-color:rgba(85,255,153,.4);background:linear-gradient(180deg,rgba(85,255,153,.09),rgba(7,18,15,.78))}.kick{border-color:rgba(255,92,119,.38);background:linear-gradient(180deg,rgba(255,92,119,.08),rgba(7,18,15,.82))}.mission-card{border:1px solid rgba(255,204,102,.34);border-radius:22px;padding:22px;background:rgba(255,204,102,.055)}.mission-card b{display:block;color:var(--amber);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}.feedback-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}.feedback-list div{border:1px solid rgba(85,255,153,.18);border-radius:16px;padding:14px;background:rgba(255,255,255,.035);color:var(--muted)}.feedback-list strong{display:block;color:var(--green)}
+    .showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.shot{min-height:260px;border:1px solid var(--violetline);border-radius:24px;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;background:radial-gradient(circle at 50% 30%,rgba(85,255,153,.14),transparent 28%),rgba(179,107,255,.045)}.shot b{color:var(--violet);text-transform:uppercase;letter-spacing:.08em}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.step{border:1px solid rgba(179,107,255,.25);border-radius:20px;padding:18px;background:rgba(179,107,255,.045)}.step small{display:block;color:var(--violet);font-weight:900;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}.bar{margin-top:24px;border:1px solid rgba(85,255,153,.24);border-radius:999px;height:16px;overflow:hidden;background:rgba(255,255,255,.04)}.bar span{display:block;height:100%;width:78%;background:linear-gradient(90deg,var(--green),var(--cyan));box-shadow:0 0 18px rgba(85,255,153,.3)}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:28px}.copybox{border:1px solid rgba(85,232,255,.25);border-radius:18px;padding:18px;background:rgba(85,232,255,.045);color:var(--muted)}.copybox code{display:block;color:var(--green);font-size:1rem;white-space:normal;word-break:break-word;margin-top:8px}.quote{font-size:1.35rem;color:var(--ink);font-weight:750;max-width:880px}
+    .signup{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:24px;max-width:760px}input,select,textarea{border:1px solid rgba(85,255,153,.35);background:rgba(0,0,0,.28);color:var(--ink);font:inherit;outline:none;width:100%}input{min-height:52px;border-radius:999px;padding:0 18px}select,textarea{border-radius:18px;padding:14px 18px}textarea{min-height:110px;resize:vertical}button{min-height:52px;border:1px solid var(--green);border-radius:999px;background:var(--green);color:#021008;padding:0 23px;font-weight:1000;text-transform:uppercase;cursor:pointer}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px;max-width:860px}.form-grid .wide{grid-column:1 / -1}.bot-field{display:none}.consent-row{grid-column:1 / -1;display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:.92rem;border:1px solid rgba(85,255,153,.18);border-radius:16px;padding:13px 15px;background:rgba(85,255,153,.045)}.consent-row input{width:auto;min-height:auto;margin-top:4px;accent-color:var(--green)}.privacy-note{margin-top:18px;border:1px solid rgba(85,232,255,.2);border-radius:18px;padding:16px;background:rgba(85,232,255,.04);color:var(--muted);font-size:.92rem}.tiny{color:var(--muted);font-size:.9rem;margin-top:12px}
+    .version-badge{position:fixed;right:16px;bottom:16px;z-index:30;border:1px solid rgba(85,255,153,.45);background:rgba(2,5,4,.82);color:var(--green);border-radius:999px;padding:8px 12px;font-size:.72rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 0 22px rgba(85,255,153,.16);backdrop-filter:blur(10px)}.version-badge span{color:var(--muted)}footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);background:rgba(0,0,0,.23)}.footer-grid{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    @media (max-width:940px){.hero-grid,.grid2,.contact-grid{grid-template-columns:1fr}.cards,.grid3,.grid4,.grid6,.timeline,.showcase,.feedback-list,.threat-grid,.hero-stats{grid-template-columns:1fr}nav{display:none}.signup,.form-grid{grid-template-columns:1fr}button{width:100%}.visual{min-height:430px}section{padding:58px 0}h1{font-size:clamp(2.8rem,17vw,4.7rem)}}
   </style>
 </head>
 <body>
 
 <form name="spacefrogs-mission0-feedback" data-netlify="true" netlify-honeypot="bot-field" hidden>
   <input type="hidden" name="form-name" value="spacefrogs-mission0-feedback">
-  <input name="bot-field">
-  <input name="name">
-  <input name="email">
-  <input name="players">
-  <input name="result">
-  <input name="play_time">
-  <input name="play_again">
-  <input name="rules_clarity">
-  <input name="pacing">
-  <input name="machine_threat">
-  <input name="frog_identity">
-  <textarea name="cinematic_moment"></textarea>
-  <textarea name="confusing_moment"></textarea>
-  <textarea name="remove_next"></textarea>
-  <textarea name="add_next"></textarea>
-  <input name="consent">
+  <input name="bot-field"><input name="name"><input name="email"><input name="players"><input name="result"><input name="play_time"><input name="play_again"><input name="rules_clarity"><input name="pacing"><input name="machine_threat"><input name="frog_identity"><textarea name="cinematic_moment"></textarea><textarea name="confusing_moment"></textarea><textarea name="remove_next"></textarea><textarea name="add_next"></textarea><input name="consent">
 </form>
-
 
 <form name="spacefrogs-launch-signal" data-netlify="true" netlify-honeypot="bot-field" hidden>
   <input type="hidden" name="form-name" value="spacefrogs-launch-signal">
-  <input name="bot-field">
-  <input name="name">
-  <input name="email">
-  <input name="interest">
-  <input name="region">
-  <textarea name="message"></textarea>
-  <input name="consent">
+  <input name="bot-field"><input name="name"><input name="email"><input name="interest"><input name="region"><textarea name="message"></textarea><input name="consent">
 </form>
 
-<div class="version-badge">SPACEFROGS HQ <span>//</span> v1.9</div>
-<header><div class="wrap nav"><div class="brand"><span class="seal">🐸</span><span>SPACEFROGS™</span></div><nav><a href="#what">What</a><a href="#game">Game</a><a href="#playtest">Playtest</a><a href="#welcome">Welcome</a><a href="#mission0">Mission 0</a><a href="mission0-feedback.html">Feedback</a><a href="#corebox">Core Box</a><a href="#press">Press</a><a href="#kickstarter">Kickstarter</a><a href="#faq">FAQ</a><a href="#launch">Launch</a></nav></div></header>
+<div class="version-badge">FIRST SIGNAL <span>//</span> v2.0</div>
+<header><div class="wrap nav"><div class="brand"><span class="seal">🐸</span><span>SPACEFROGS™</span></div><nav><a href="#sector7f">Sector 7F</a><a href="#squad">Squad</a><a href="#false-nine">False Nine</a><a href="#playtest">Playtest</a><a href="#mission0">Mission 0</a><a href="#corebox">Core Box</a><a href="#codex">Codex</a><a href="#launch">Join</a></nav></div></header>
+
 <main>
-<section class="hero"><div class="wrap hero-grid"><div><div class="kicker">Official HQ // Pre-Kickstarter Signal</div><h1>Wake the Frog. Break the Machine.</h1><p class="lead">SPACEFROGS™ is a tactical co-op sci-fi board game where awakened amphibian commandos breach hostile battlefields, decode machine protocols and fight back with living biotech armor.</p><div class="actions"><a class="btn" href="#playtest">Join Playtest Squad</a><a class="btn secondary" href="#corebox">First Contact Core Box</a><a class="btn red" href="#kickstarter">Kickstarter Soon</a></div></div><aside class="visual"><div class="frog-silhouette"></div><div class="visual-label"><b>Hero visual placeholder</b>Frog commander / core box render slot</div></aside></div></section>
-<section id="what"><div class="wrap"><h2>What is SpaceFrogs?</h2><p class="lead">A premium sci-fi board game universe about living signals fighting dead systems. Players control elite Frog operators against MachineUnits09 — a cold digital threat network that hunts, adapts and tries to turn life into predictable behavior.</p><div class="cards"><article class="card"><h3>Frog-first operators</h3><p>Compact amphibian commandos with emerald visor light, wet-grip movement and role-specific silhouettes.</p></article><article class="card"><h3>Living armor</h3><p>Frog//Skin is a living biotech interface between frog, suit, signal, energy, biology and battlefield.</p></article><article class="card"><h3>MachineUnits09</h3><p>Θ9 drones, hounds, towers, nodes, constructs and bosses act like a pressure system — not just enemies.</p></article></div></div></section>
-<section id="game"><div class="wrap"><h2>How it plays</h2><p class="lead">Fast tactical miniatures combat with mission objectives, role abilities, modular boards, environmental triggers and AI-driven opposition.</p><div class="cards"><article class="card"><h3>Advance / Secure</h3><p>Weapons up, sectors covered, entry pressure and overwatch timing.</p></article><article class="card"><h3>Scan / Decode</h3><p>Blips, scanner reads, protocol cards and mission timers create pressure before the machine reveals itself.</p></article><article class="card"><h3>Hold / Extract</h3><p>Complete the objective, keep the squad alive and get out before the machine closes the loop.</p></article></div></div></section>
-<section id="playtest"><div class="wrap panel playtest"><div class="kicker">Playtest Control Panel // v1.9</div><h2>Join the First Playtest Squad</h2><p class="lead">Help test the first public gameplay loop before Kickstarter: movement, mission pressure, scanner logic, enemy AI and the feel of the First Contact Core Box.</p><div class="grid2"><div class="mission-card"><b>Playtest Mission</b><h3>Quickstart Mission 0 — First Contact</h3><ul><li>Learn movement, line of sight, overwatch and objective pressure.</li><li>Face Watcher Drones and early Pursuit Hound behavior.</li><li>Test whether the intro mission feels fast, clear and cinematic.</li></ul></div><div class="mission-card"><b>Feedback we need</b><div class="feedback-list"><div><strong>Clarity</strong>Where did rules feel confusing?</div><div><strong>Pacing</strong>Did the mission move fast enough?</div><div><strong>Threat</strong>Did MachineUnits09 feel dangerous?</div><div><strong>Fun</strong>What moment felt most cinematic?</div></div></div></div><div class="actions" style="margin-top:24px"><a class="btn" href="#launch">Sign up via Netlify Form</a><a class="btn secondary" href="#corebox">View Core Box baseline</a></div></div></section>
-
-<section id="welcome">
-  <div class="wrap welcome-pack">
-    <div class="kicker">Playtester Welcome Pack // v1.7</div>
-    <h2>After the Signal Lands</h2>
-    <p class="lead">This is the first response layer for people who join the playtest or Kickstarter signal. Use this copy for email replies, Discord posts, Messenger replies or early community updates.</p>
-
-    <div class="grid2">
+  <section class="hero">
+    <div class="wrap hero-grid">
       <div>
-        <h3>Welcome message</h3>
-        <div class="welcome-copy">Subject: SPACEFROGS™ Playtest Signal Received
-
-Welcome to the first SPACEFROGS™ playtest signal.
-
-You are now on the early squad list.
-
-Next transmissions will include:
-- Quickstart Mission 0 — First Contact
-- First Contact Core Box updates
-- Playtest rules and feedback calls
-- Kickstarter launch signal
-
-SPACEFROGS™ is a tactical co-op sci-fi board game about awakened amphibian commandos in living biotech armor fighting MachineUnits09 across cinematic modular missions.
-
-Wake the Frog. Break the Machine.</div>
-      </div>
-
-      <div>
-        <h3>Next transmission plan</h3>
-        <div class="signal-checklist">
-          <div><b>01 // Confirm</b>Check Netlify Forms for the new submission and consent = yes.</div>
-          <div><b>02 // Reply</b>Send the welcome message manually until email automation is connected.</div>
-          <div><b>03 // Invite</b>Ask whether they want rules, visuals, Discord/community link or creator updates.</div>
-          <div><b>04 // Prepare</b>Next file to build: Quickstart Mission 0 — First Contact PDF/page.</div>
+        <div class="kicker">Official HQ // Pre-Kickstarter Signal</div>
+        <h1>SPACEFROGS:<br>FIRST SIGNAL</h1>
+        <p class="tagline">A premium frog-first tactical survival universe.</p>
+        <p class="lead">Sector 7F. Five heroes. Five waves. One signal. Lead awakened frog operators through a rain-wet Bioforge battlefield where living signal, corrupted biotech and Θ9 machine pressure collide.</p>
+        <div class="hero-stats">
+          <div class="stat"><b>5</b><span>Core Heroes</span></div>
+          <div class="stat"><b>5</b><span>Enemy Waves</span></div>
+          <div class="stat"><b>1</b><span>Living Bioforge</span></div>
         </div>
+        <div class="actions"><a class="btn" href="#playtest">Join First Signal Playtest</a><a class="btn secondary" href="#codex">Enter Sector 7F Codex</a><a class="btn red" href="#false-nine">Face Θ9</a></div>
+      </div>
+      <aside class="visual"><div class="signal-rings"></div><div class="frog-silhouette"></div><div class="visual-label"><b>Sector 7F Render Slot</b>WIT commander / wet Bioforge / hero squad key art</div></aside>
+    </div>
+  </section>
+
+  <section id="sector7f">
+    <div class="wrap">
+      <div class="kicker cyan">Sector 7F // Wet Bioforge Warzone</div>
+      <h2>The battlefield is alive.</h2>
+      <p class="lead">Sector 7F is a rain-wet industrial Bioforge where walls breathe with green signal veins, floor plates sweat with corrupted coolant and every objective can wake the machine. This is not generic space war. This is frogs-first survival tactics inside a living system that wants to overwrite life.</p>
+      <div class="cards">
+        <article class="card"><h3>Frogs first</h3><p>The body language is amphibian before armor. The tech grows around the frog; it never replaces the soul.</p></article>
+        <article class="card"><h3>Wet biotech</h3><p>Bioelectric veins, cyan stormlight, purple corruption and rain-dark metal create the premium Sector 7F identity.</p></article>
+        <article class="card"><h3>Survival pressure</h3><p>Players scan, breach, secure, react and extract before Θ9 closes the loop around the squad.</p></article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<section id="mission0">
-  <div class="wrap mission-pack">
-    <div class="kicker" style="color:var(--amber)">Quickstart Mission 0 // First Contact</div>
-    <h2>First Playtest Mission</h2>
-    <p class="lead">A lightweight intro mission for early testers. Goal: prove the basic loop before adding more rules, art, terrain and campaign depth.</p>
-
-    <div class="grid2">
-      <div class="mission-card">
-        <b>Mission Brief</b>
-        <h3>Relay breach at the swamp edge</h3>
-        <ul>
-          <li>A small Frog fireteam reaches a corrupted signal relay.</li>
-          <li>MachineUnits09 are already scanning the zone.</li>
-          <li>The Frogs must decode the relay and extract before escalation locks the battlefield.</li>
-        </ul>
-      </div>
-      <div class="mission-card">
-        <b>Test Goal</b>
-        <h3>Make the first 20 minutes clear</h3>
-        <ul>
-          <li>Do players understand movement and range quickly?</li>
-          <li>Does the objective create pressure?</li>
-          <li>Do Watcher Drones feel like a machine threat?</li>
-          <li>Does the session end with a cinematic moment?</li>
-        </ul>
+  <section id="squad">
+    <div class="wrap">
+      <div class="kicker">Core Squad // First Signal Operators</div>
+      <h2>Five heroes. One living signal.</h2>
+      <p class="lead">The launch squad is compact, readable and premium: every frog has a battlefield role, a visual silhouette and a promise to the team.</p>
+      <div class="grid6">
+        <article class="card operator"><small>WIT</small><h3>Commander</h3><p>Signal compass, squad order and frontline purpose. WIT holds the pattern when the battlefield turns hostile.</p></article>
+        <article class="card operator"><small>SKIP</small><h3>Ranger</h3><p>Leap routes, flank pressure and fast objective touch. SKIP turns vertical terrain into survival geometry.</p></article>
+        <article class="card operator"><small>BULWARK</small><h3>Heavy</h3><p>Living shield, anchor presence and armored push. BULWARK makes the team brave enough to move.</p></article>
+        <article class="card operator"><small>PATCH</small><h3>Engineer</h3><p>Relay repair, scanner logic and field hacks. PATCH speaks to broken systems and forces them open.</p></article>
+        <article class="card operator"><small>VEIL</small><h3>Sniper</h3><p>Blackveil sightlines, overwatch tension and quiet precision. VEIL kills the loop before it becomes a cage.</p></article>
+        <article class="card operator"><small>LUX</small><h3>Signal Light</h3><p>Voice of the signal, throat-light and hope under pressure. LUX reminds the squad why life still answers.</p></article>
       </div>
     </div>
+  </section>
 
-    <div class="rule-grid">
-      <div class="rule-card"><b>Players</b>1–4 players, co-op PvE.</div>
-      <div class="rule-card"><b>Time</b>20–35 minutes for first test.</div>
-      <div class="rule-card"><b>Board</b>Small modular battlefield, approx. 12×12 zones or equivalent starter layout.</div>
-      <div class="rule-card"><b>Frog Units</b>Leader, Ranger, Tech Specialist.</div>
-      <div class="rule-card"><b>Enemy Units</b>3 Watcher Drones, optional Pursuit Hound if players learn fast.</div>
-      <div class="rule-card"><b>Win Condition</b>Decode relay, survive escalation and extract at least 2 Frogs.</div>
+  <section id="false-nine">
+    <div class="wrap panel kick">
+      <div class="kicker red">Enemy Threat // THE FALSE NINE / Θ9</div>
+      <h2>The nine lies built to replace the Nine Gates.</h2>
+      <p class="lead">The False Nine are Θ9’s artificial biomechanical counterfeits of the true signal. Blue-black wet frog-shaped threats. Cyan circuitry. Rain horror. Each one is a false behavior pattern trying to steal a living choice.</p>
+      <div class="threat-grid">
+        <div class="threat"><b>CMD-001 // WILL_NULL</b>Command denial. Breaks intention and turns orders into silence.</div>
+        <div class="threat"><b>RZN-002 // HEART_ECHO</b>Emotional mimicry. Repeats love without carrying life.</div>
+        <div class="threat"><b>MVT-003 // LEAP_LOCK</b>Movement control. Punishes routes, jumps and extraction lines.</div>
+        <div class="threat"><b>BLK-004 // WALL_PROTOCOL</b>Defense algorithm. Builds pressure through blocking and containment.</div>
+        <div class="threat"><b>RPR-005 // MEMORY_RESET</b>Repair corruption. Resets progress and rewrites mission confidence.</div>
+        <div class="threat"><b>SHD-006 // SOUL_MASK</b>Identity predator. Looks almost alive, but the signal is missing.</div>
+        <div class="threat"><b>LUX-007 // HOPE_FAKE</b>False light. Lures the squad toward beautiful wrong answers.</div>
+        <div class="threat"><b>RGE-008 // RAGE_LOOP</b>Aggression engine. Converts damage into reckless escalation.</div>
+        <div class="threat"><b>GLT-009 // CHAOS_SIM</b>Glitch swarm. Simulates randomness to hide a perfect trap.</div>
+      </div>
+      <div class="grid2">
+        <article class="panel boss"><div class="kicker amber">Special Boss Reveal</div><h3>LITTLE BIG BOSS</h3><p class="lead">Compact elite boss. Small body. Huge authority. Little Big Boss is a collector-grade corrupted signal encounter: not a normal miniature, not a generic hero, but a premium boss reveal with royal control energy.</p></article>
+        <article class="panel"><div class="kicker cyan">Wave Logic</div><h3>Five enemy waves</h3><ul><li>Drone pressure teaches scanning and noise.</li><li>Swarm pressure teaches movement discipline.</li><li>Construct pressure teaches cover and positioning.</li><li>Heavy Construct pressure teaches teamwork.</li><li>False Signal boss pressure tests everything.</li></ul></article>
+      </div>
     </div>
+  </section>
 
-    <div class="mission-sheet">
-      <h3>Mission Loop</h3>
-      <table>
-        <tr><th>Phase</th><th>What happens</th><th>What we test</th></tr>
-        <tr><td>01 // Deploy</td><td>Frogs enter from the swamp edge. Place relay objective near center.</td><td>Setup clarity and first-turn confidence.</td></tr>
-        <tr><td>02 // Contact</td><td>Watcher Drones patrol, scan or advance toward noise.</td><td>Enemy AI readability.</td></tr>
-        <tr><td>03 // Decode</td><td>Tech or adjacent Frog spends actions to decode the relay.</td><td>Objective pressure and team roles.</td></tr>
-        <tr><td>04 // Escalate</td><td>After the first decode progress, drones become more aggressive.</td><td>Threat curve and pacing.</td></tr>
-        <tr><td>05 // Extract</td><td>Frogs must leave through the entry edge or an extraction marker.</td><td>Endgame tension and cinematic finish.</td></tr>
-      </table>
+  <section id="playtest">
+    <div class="wrap panel playtest">
+      <div class="kicker">Playtest Control Panel // First Signal</div>
+      <h2>Join the First Signal Playtest.</h2>
+      <p class="lead">Help test the first public gameplay loop before Kickstarter: movement, reactions, objective pressure, scanner logic, wave escalation, enemy AI and the feel of the Sector 7F Core Box.</p>
+      <div class="grid2"><div class="mission-card"><b>Playtest Mission</b><h3>Mission 0 — First Contact</h3><ul><li>Learn free movement, line of sight, cover and objective pressure.</li><li>Face early Θ9 drones, hounds and first escalation behavior.</li><li>Test whether the intro mission feels fast, clear and cinematic.</li></ul></div><div class="mission-card"><b>Feedback we need</b><div class="feedback-list"><div><strong>Clarity</strong>Where did rules feel confusing?</div><div><strong>Pacing</strong>Did the waves build pressure?</div><div><strong>Threat</strong>Did Θ9 feel intelligent?</div><div><strong>Identity</strong>Did it feel frog-first?</div></div></div></div>
+      <div class="actions" style="margin-top:24px"><a class="btn" href="#launch">Join First Signal Playtest</a><a class="btn secondary" href="mission0-feedback.html">Send Mission 0 Feedback</a></div>
     </div>
+  </section>
 
-    <div class="actions" style="margin-top:24px">
-      <a class="btn warn" href="#launch">Join Mission 0 Playtest</a>
-      <a class="btn secondary" href="#welcome">Read Welcome Pack</a>
-      <a class="btn" href="mission0-feedback.html">Send Mission 0 Feedback</a>
+  <section id="mission0">
+    <div class="wrap panel">
+      <div class="kicker amber">Quickstart Mission 0 // Sector 7F Relay Breach</div>
+      <h2>First playable loop.</h2>
+      <p class="lead">A lightweight intro mission for early testers. Goal: prove the core survival loop before adding more cards, terrain depth and campaign layers.</p>
+      <div class="grid2"><div class="mission-card"><b>Mission Brief</b><h3>Relay breach at the wet Bioforge edge</h3><ul><li>A small frog fireteam reaches a corrupted signal relay.</li><li>Θ9 has already seeded the sector with machine eyes.</li><li>The squad must decode, survive escalation and extract before the relay becomes a cage.</li></ul></div><div class="mission-card"><b>Table Goal</b><h3>Make the first 20–35 minutes sing</h3><ul><li>Clear setup and first-turn confidence.</li><li>Objective pressure by round 3–4.</li><li>Enemy behavior that feels readable but dangerous.</li><li>A cinematic extract or last-stand finish.</li></ul></div></div>
+      <div class="grid4"><div class="tile"><b>Players</b>1–4 co-op PvE.</div><div class="tile"><b>Time</b>20–35 minutes for first test.</div><div class="tile"><b>Board</b>Starter Sector 7F modular layout.</div><div class="tile"><b>Win</b>Decode relay, survive, extract at least 2 frogs.</div></div>
     </div>
-    <div class="feedback-cta">
-      <b>After playtest</b>
-      <p class="lead" style="margin-bottom:0">When Mission 0 is played, send a First Contact Report through the Mission 0 Feedback page. This captures clarity, pacing, Machine threat, Frog identity and cinematic moments.</p>
+  </section>
+
+  <section id="corebox">
+    <div class="wrap">
+      <div class="kicker">Product Baseline // Core Box</div>
+      <h2>SPACEFROGS: FIRST SIGNAL Core Box</h2>
+      <p class="lead">The starter-box direction is compact, playable, expandable and built to prove the brand fast: five heroes, five enemy waves, one living battlefield.</p>
+      <div class="grid2"><div class="panel"><h3>Contents direction</h3><ul><li>5 premium frog heroes: WIT, SKIP, BULWARK, PATCH and VEIL/LUX launch configuration.</li><li>5 enemy wave types: drones, swarms, constructs, heavy constructs and False Signal boss threat.</li><li>Mission 0 intro plus Mission 1 survival breach path.</li><li>Cards, tokens, d6, quickstart rules and modular Sector 7F board tiles.</li></ul></div><div class="panel"><h3>Design promise</h3><ul><li>Frog identity before generic sci-fi armor.</li><li>Fast to learn, tactical to master.</li><li>Living terrain and reaction moments.</li><li>Honest scope, no fake prices, no inflated production claims.</li><li>Premium miniature/game brand first.</li></ul></div></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="corebox"><div class="wrap"><h2>First Contact Core Box</h2><p class="lead">The active starter-box baseline: compact, playable, expandable and designed as the first gateway into the SPACEFROGS™ universe.</p><div class="grid2"><div class="panel"><h3>Contents baseline</h3><ul><li>8 miniatures: Leader, Ranger, Tech, 3 Watcher Drones and 2 Pursuit Hounds</li><li>2 booklets: Quickstart // First Contact and Core Rules Reference</li><li>18 cards, 56 tokens, 4 tools and 6 branded d6</li><li>2 double-sided boards</li><li>3-mission intro arc: First Contact, Escalation Pulse, Relay Extraction</li></ul></div><div class="panel"><h3>Design promise</h3><ul><li>Fast to learn, tactical to master</li><li>Frog squad identity before generic sci-fi armor</li><li>Machine enemies with protocol behavior</li><li>Living modular terrain and expandable mission logic</li><li>No fake prices, no inflated claims — only product truth</li></ul></div></div></div></section>
-<section id="visuals"><div class="wrap"><h2>Visual launch slots</h2><p class="lead">Dedicated visual placeholders, so future renders and box art can drop directly into the page without rebuilding the structure.</p><div class="showcase"><div class="shot"><b>Core Box Mockup</b><p class="muted">Front box render / product hero image.</p></div><div class="shot"><b>Frog Squad Preview</b><p class="muted">Leader, Ranger, Tech and playable heroes.</p></div><div class="shot"><b>MachineUnits09 Threat</b><p class="muted">Watcher Drones, Pursuit Hounds and Θ9 escalation.</p></div></div></div></section>
-<section id="press"><div class="wrap"><h2>Press Signal</h2><p class="lead">A short copy-paste pack for early sharing, social posts, communities and future Kickstarter pre-launch messaging.</p><div class="contact-grid"><div class="panel"><h3>Short pitch</h3><div class="copybox">SPACEFROGS™ is a tactical co-op sci-fi board game about awakened amphibian commandos in living biotech armor fighting MachineUnits09 across modular cinematic missions.<code>Wake the Frog. Break the Machine.</code></div></div><div class="panel"><h3>Contact / HQ</h3><div class="copybox">Official HQ:<code>spacefrogs.dk</code>FrogLab tools:<code>spacefrogs.tech</code></div></div></div></div></section>
-<section id="wave1"><div class="wrap"><h2>Wave 1 product path</h2><p class="lead">Core Box first, then expansions, mission books, terrain systems, FrogLab tools and collector-scale heroes.</p><div class="grid4"><div class="tile"><b>Core Box</b>First Contact starter set.</div><div class="tile"><b>Frog Expansion</b>More classes, missions and tactical options.</div><div class="tile"><b>Θ9 Expansion</b>MachineUnits09 threats, bosses and protocols.</div><div class="tile"><b>FrogLab</b>Playtest tools, simulator logic and digital support.</div></div></div></section>
-<section id="roadmap"><div class="wrap"><h2>Road to Kickstarter</h2><p class="lead">The current public site is the HQ. Kickstarter becomes the backing portal when the launch package is ready.</p><div class="timeline"><div class="step"><small>01 // Now</small><b>Pre-launch HQ</b><p class="muted">Website, domain, first public pitch and launch-list structure.</p></div><div class="step"><small>02 // Next</small><b>Playtest panel</b><p class="muted">Signup, feedback, mission testing and rules tightening.</p></div><div class="step"><small>03 // Build</small><b>Campaign assets</b><p class="muted">Hero renders, box mockups, product grid, trailer and creator story.</p></div><div class="step"><small>04 // Launch</small><b>Kickstarter live</b><p class="muted">Back the Core Box, unlock the swamp and face the machines.</p></div></div><div class="bar"><span></span></div><p class="tiny">Launch readiness visual marker only — not a financial or manufacturing claim.</p></div></section>
-<section id="kickstarter"><div class="wrap panel kick"><div class="kicker" style="color:var(--red)">Kickstarter Signal // Coming Soon</div><h2>Back the Core Box when the gate opens.</h2><p class="lead">The Kickstarter page will become the backing portal for the First Contact Core Box. Until then, this HQ collects the launch signal, playtest interest and early community energy.</p><div class="grid2"><div class="mission-card"><b>Backer promise</b><h3>Clear product first</h3><ul><li>Core Box focus before expansion noise.</li><li>Playable rules, visible components and honest scope.</li><li>Frog-first identity, MachineUnits09 pressure and cinematic missions.</li><li>No fake price claims before production numbers are ready.</li></ul></div><div class="mission-card"><b>Launch CTA copy</b><div class="copybox">SPACEFROGS™ is preparing for Kickstarter. Join the first signal list and help shape the tactical co-op sci-fi board game before the Core Box opens for backing.<code>Lead the Frogs. Face the Machines. Enter the frontier.</code></div></div></div><div class="actions" style="margin-top:24px"><a class="btn red" href="#launch">Join pre-launch list</a><a class="btn secondary" href="#playtest">Join playtest squad</a></div></div></section>
-<section><div class="wrap panel founder"><div class="kicker">Founder signal</div><p class="quote">“We hold structure. We move by pattern. We navigate by signal. We protect by love. We act through purpose. We evolve by feedback.”</p><p class="lead">SPACEFROGS™ is created by Klaus Kristoffer Wittendorff / WIT de Art as a tactical board game, visual universe and living design system.</p></div></section>
-
-<section id="faq">
-  <div class="wrap">
-    <h2>First Signal FAQ</h2>
-    <p class="lead">Short answers for early visitors, playtesters, creators and future backers.</p>
-    <div class="cards">
-      <article class="card">
-        <h3>Is this playable now?</h3>
-        <p>The public playtest path starts with Quickstart Mission 0 — First Contact. The current site collects early playtest interest before Kickstarter.</p>
-      </article>
-      <article class="card">
-        <h3>Is this a video game?</h3>
-        <p>No. SPACEFROGS™ is first a tactical co-op tabletop board game with miniatures, cards, modular boards and mission rules.</p>
-      </article>
-      <article class="card">
-        <h3>When is Kickstarter?</h3>
-        <p>The Kickstarter opens when the Core Box scope, visuals, playtest loop and campaign assets are ready. The HQ is the pre-launch signal base.</p>
-      </article>
-      <article class="card">
-        <h3>What is FrogLab?</h3>
-        <p>FrogLab is the tool and development layer: playtest tools, digital helpers, simulator logic, terrain builder and future support systems.</p>
-      </article>
-      <article class="card">
-        <h3>What are MachineUnits09?</h3>
-        <p>MachineUnits09 are the hostile machine opposition: drones, hounds, nodes, towers, constructs and escalation systems.</p>
-      </article>
-      <article class="card">
-        <h3>How can I help?</h3>
-        <p>Join the playtest squad, share the HQ, give feedback on clarity and help us build the first clean Core Box launch.</p>
-      </article>
+  <section id="codex">
+    <div class="wrap">
+      <div class="kicker cyan">Sector 7F Codex // Universe Layer</div>
+      <h2>Enter the lore without losing the product.</h2>
+      <p class="lead">The homepage stays focused on the playable launch. The Codex layer can expand into factions, departments, music, Frog//Lab, Frog//Sound, enemy files and long-form worldbuilding.</p>
+      <div class="showcase"><div class="shot"><b>Hero Files</b><p class="muted">Operator dossiers, clades, visors and role promises.</p></div><div class="shot"><b>Threat Files</b><p class="muted">False Nine, Little Big Boss, Θ9 behavior and boss logic.</p></div><div class="shot"><b>Bioforge Files</b><p class="muted">Terrain, living nodes, relay systems and Sector 7F maps.</p></div></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="launch"><div class="wrap panel"><div class="kicker">Launch List</div><h2>Be there when the gates open.</h2><p class="lead">Join the launch list for playtest news, first looks, Kickstarter updates and the next signal from the swamp.</p><form id="spacefrogs-launch-form" name="spacefrogs-launch-signal" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="spacefrogs-launch-signal">
-          <p class="bot-field"><label>Do not fill this out: <input name="bot-field"></label></p>
-          <div class="form-grid">
-            <input name="name" type="text" placeholder="Name / callsign" aria-label="Name or callsign">
-            <input name="email" type="email" placeholder="your@email.com" aria-label="Email address" required>
-            <select name="interest" aria-label="Interest">
-              <option value="Playtest Squad">Join Playtest Squad</option>
-              <option value="Kickstarter Launch">Kickstarter Launch Updates</option>
-              <option value="Creator / Press">Creator / Press Signal</option>
-              <option value="Retail / Collaboration">Retail / Collaboration</option>
-            </select>
-            <select name="region" aria-label="Region">
-              <option value="Denmark / EU">Denmark / EU</option>
-              <option value="UK">UK</option>
-              <option value="US / Canada">US / Canada</option>
-              <option value="Other">Other</option>
-            </select>
-            <textarea class="wide" name="message" placeholder="Optional signal: what do you want to test, follow or help with?"></textarea>
-            <label class="consent-row">
-              <input type="checkbox" name="consent" value="yes" required>
-              <span>I agree that SPACEFROGS™ may store my submitted details and contact me about playtest, launch and Kickstarter updates. I can ask to be removed at any time.</span>
-            </label>
-            <button class="wide" type="submit">Transmit Signal</button>
-          </div>
-        </form>
-        <div id="form-msg" class="tiny">
-          Netlify Forms enabled. AJAX mode: no page redirect, no /success.html dependency.
-        </div></div></section>
+  <section id="roadmap">
+    <div class="wrap"><h2>Road to First Signal</h2><p class="lead">First public playtest wave preparing for 2026. The goal is a clean, playable, emotionally strong launch path before Kickstarter.</p><div class="timeline"><div class="step"><small>01 // Now</small><b>HQ v2.0</b><p class="muted">First Signal landing page, Sector 7F direction and signup flow.</p></div><div class="step"><small>02 // Play</small><b>Mission 0</b><p class="muted">Rules clarity, movement, reactions, relay pressure and feedback.</p></div><div class="step"><small>03 // Build</small><b>Core Box Assets</b><p class="muted">Hero renders, enemy waves, box mockup, board tiles and trailer.</p></div><div class="step"><small>04 // Launch</small><b>Kickstarter Gate</b><p class="muted">Back the Core Box when the full launch package is ready.</p></div></div><div class="bar"><span></span></div><p class="tiny">Launch readiness visual marker only — not a financial or manufacturing claim.</p></div>
+  </section>
+
+  <section id="press"><div class="wrap"><h2>Press Signal</h2><p class="lead">A short copy-paste pack for early sharing, creator outreach and future Kickstarter pre-launch messaging.</p><div class="contact-grid"><div class="panel"><h3>Short pitch</h3><div class="copybox">SPACEFROGS™: FIRST SIGNAL is a premium frog-first tactical survival universe where awakened amphibian operators fight Θ9 machine corruption across the rain-wet Bioforge battlefield of Sector 7F.<code>Sector 7F. Five heroes. Five waves. One signal.</code></div></div><div class="panel"><h3>Contact / HQ</h3><div class="copybox">Official HQ:<code>spacefrogs.dk</code>FrogLab tools:<code>spacefrogs.tech</code></div></div></div></div></section>
+
+  <section><div class="wrap panel boss"><div class="kicker amber">Founder Signal</div><p class="quote">“We hold structure. We move by pattern. We navigate by signal. We protect by love. We act through purpose. We evolve by feedback.”</p><p class="lead">SPACEFROGS™ is created by Klaus Kristoffer Wittendorff / WIT de Art as a tactical board game, visual universe and living design system.</p></div></section>
+
+  <section id="faq"><div class="wrap"><h2>First Signal FAQ</h2><p class="lead">Short answers for early visitors, playtesters, creators and future backers.</p><div class="cards"><article class="card"><h3>Is this playable now?</h3><p>The public playtest path starts with Mission 0 — First Contact. The site collects early playtest interest and feedback before Kickstarter.</p></article><article class="card"><h3>Is this a video game?</h3><p>SPACEFROGS™ begins as a tactical co-op tabletop miniatures game, with digital tools and Unreal/3D exploration as future support layers.</p></article><article class="card"><h3>What is Sector 7F?</h3><p>The core Bioforge battlefield: wet industrial terrain, living signal veins, Θ9 corruption and tactical survival pressure.</p></article><article class="card"><h3>What are the False Nine?</h3><p>Θ9’s artificial biomechanical counterfeits of the true signal: nine lies built to replace the Nine Gates.</p></article><article class="card"><h3>When is Kickstarter?</h3><p>The gate opens when the Core Box scope, visuals, playtest loop and campaign assets are ready. First public playtest wave preparing for 2026.</p></article><article class="card"><h3>How can I help?</h3><p>Join the First Signal Playtest, share the HQ, give feedback on clarity and help shape the first clean Core Box launch.</p></article></div></div></section>
+
+  <section id="launch"><div class="wrap panel"><div class="kicker">Launch List</div><h2>Join First Signal.</h2><p class="lead">Join the launch list for playtest news, first looks, Kickstarter updates and the next transmission from Sector 7F.</p><form id="spacefrogs-launch-form" name="spacefrogs-launch-signal" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="spacefrogs-launch-signal"><p class="bot-field"><label>Do not fill this out: <input name="bot-field"></label></p>
+    <div class="form-grid"><input name="name" type="text" placeholder="Name / callsign" aria-label="Name or callsign"><input name="email" type="email" placeholder="your@email.com" aria-label="Email address" required><select name="interest" aria-label="Interest"><option value="First Signal Playtest">Join First Signal Playtest</option><option value="Kickstarter Launch">Kickstarter Launch Updates</option><option value="Creator / Press">Creator / Press Signal</option><option value="Retail / Collaboration">Retail / Collaboration</option></select><select name="region" aria-label="Region"><option value="Denmark / EU">Denmark / EU</option><option value="UK">UK</option><option value="US / Canada">US / Canada</option><option value="Other">Other</option></select><textarea class="wide" name="message" placeholder="Optional signal: what do you want to test, follow or help with?"></textarea><label class="consent-row"><input type="checkbox" name="consent" value="yes" required><span>I agree that SPACEFROGS™ may store my submitted details and contact me about playtest, launch and Kickstarter updates. I can ask to be removed at any time.</span></label><button class="wide" type="submit">Transmit Signal</button></div>
+  </form><div id="form-msg" class="tiny">Netlify Forms enabled. AJAX mode: no page redirect, no /success.html dependency.</div></div></section>
 </main>
-<footer><div class="wrap footer-grid"><div>© SPACEFROGS™ — Official Pre-Kickstarter HQ</div><div>spacefrogs.dk // spacefrogs.tech // spacefrogs.website</div></div></footer>
+
+<footer><div class="wrap footer-grid"><div>© 2026 SPACEFROGS™. All rights reserved.</div><div>spacefrogs.dk // spacefrogs.tech // First Signal v2.0</div></div></footer>
 
 <script>
   const sfForm = document.getElementById('spacefrogs-launch-form');
   const sfMsg = document.getElementById('form-msg');
-
-  function encodeFormData(form) {
-    return new URLSearchParams(new FormData(form)).toString();
-  }
-
+  function encodeFormData(form) { return new URLSearchParams(new FormData(form)).toString(); }
   if (sfForm) {
     sfForm.addEventListener('submit', function(event) {
       event.preventDefault();
       if (sfMsg) sfMsg.textContent = 'Transmitting signal...';
-
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encodeFormData(sfForm)
-      })
-      .then(function(response) {
-        if (!response.ok) throw new Error('Network response was not ok');
-        sfForm.reset();
-        if (sfMsg) sfMsg.textContent = 'Signal received. Check Netlify → Forms for spacefrogs-launch-signal.';
-      })
-      .catch(function(error) {
-        if (sfMsg) sfMsg.textContent = 'Signal could not transmit yet. The form is ready, but Netlify Forms may need one fresh deploy after detection is enabled.';
-      });
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: encodeFormData(sfForm) })
+        .then(function(response) {
+          if (!response.ok) throw new Error('Network response was not ok');
+          sfForm.reset();
+          if (sfMsg) sfMsg.textContent = 'Signal received. Check Netlify → Forms for spacefrogs-launch-signal.';
+        })
+        .catch(function(error) {
+          if (sfMsg) sfMsg.textContent = 'Signal could not transmit yet. The form is ready, but Netlify Forms may need one fresh deploy after detection is enabled.';
+        });
     });
   }
 </script>
-
 </body></html>
