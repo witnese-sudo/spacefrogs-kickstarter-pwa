@@ -1,0 +1,21 @@
+{
+  "version": "2026-08-24",
+  "rule": "No claim outruns proof.",
+  "slots": [
+    {"id":"wit","name":"WIT","role":"Leader","file":"wit.glb","status":"present-unverified-visual"},
+    {"id":"patch","name":"PATCH","role":"Engineer / Tech","file":"patch.glb","status":"present-unverified-visual"},
+    {"id":"skip","name":"SKIP","role":"Ranger / Recon","file":"skip.glb","status":"present-unverified-visual"},
+    {"id":"bulwark","name":"BULWARK","role":"Heavy","file":"bulwark_deluxe_hero_edition.glb","status":"present-unverified-visual"},
+    {"id":"veil","name":"VEIL","role":"Stealth","file":"veil.glb","status":"present-unverified-visual"},
+    {"id":"luma","name":"LUMA","role":"Support","file":null,"status":"missing"},
+    {"id":"volt","name":"VOLT","role":"Shock Operative // Crowd Control","file":"volt.glb","status":"present-unverified-visual"},
+    {"id":"kelp","name":"KELP","role":"Aquatic // Flow Control","file":"kelp.glb","status":"present-unverified-visual"},
+    {"id":"echo","name":"ECHO","role":"Signal Recon // Psionic","file":"echo.glb","status":"present-unverified-visual"}
+  ],
+  "legacySlotsNotOfficial": ["luxa","tox"],
+  "notes": [
+    "File presence and SHA-256 identity are verified from the supplied Replit snapshot.",
+    "Visual Golden Master approval has not been established for any GLB by this migration step.",
+    "LUMA must remain a missing/placeholder slot until a verified model exists."
+  ]
+}
