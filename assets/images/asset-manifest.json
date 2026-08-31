@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "package": "spacefrogs-website-asset-pack",
   "created": "2026-08-31",
-  "deploymentState": "integrated-on-staging-branch",
+  "deploymentState": "prepared-for-live-release",
   "siteChanges": {
     "staging": true,
-    "live": false
+    "live": true
   },
   "canonRules": {
     "currentHeroRoster": [
