@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#020604">
+<title>SPACEFROGS // 3D Viewer Runtime Proof</title>
+<style>
+:root{--bg:#020604;--panel:#06110d;--ink:#eafff4;--muted:#8fb5a6;--green:#4dff96;--cyan:#4de8ff;--line:rgba(77,255,150,.28);--violet:#a86bff}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 20% 0,rgba(77,255,150,.12),transparent 34%),linear-gradient(180deg,#020604,#04100b);color:var(--ink);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}.wrap{width:min(1080px,calc(100% - 24px));margin:auto;padding:20px 0 40px}.top{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:14px}.brand{font-weight:900;letter-spacing:.12em}.brand b{color:var(--green)}.status{font-size:.76rem;color:var(--green);border:1px solid var(--line);padding:8px 10px}.stage{position:relative;border:1px solid var(--line);background:linear-gradient(180deg,rgba(7,17,13,.96),rgba(3,10,7,.98));min-height:68vh;overflow:hidden;box-shadow:inset 0 0 60px rgba(77,255,150,.035)}#viewport{position:absolute;inset:0}.hud{position:absolute;inset:14px 14px auto 14px;display:flex;justify-content:space-between;gap:10px;pointer-events:none}.hud span{font-size:.72rem;letter-spacing:.1em;color:var(--green);background:rgba(2,6,4,.76);padding:7px 9px;border:1px solid rgba(77,255,150,.2)}.load{position:absolute;inset:0;display:grid;place-items:center;background:radial-gradient(circle,rgba(77,255,150,.06),transparent 50%)}.load button{border:1px solid var(--green);background:#06110d;color:var(--green);padding:15px 22px;text-transform:uppercase;font:inherit;font-weight:900;letter-spacing:.09em;cursor:pointer}.load[hidden]{display:none}.hint{position:absolute;left:0;right:0;bottom:14px;text-align:center;color:var(--muted);font-size:.72rem;letter-spacing:.08em;pointer-events:none}.selector{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;margin-top:12px}.selector button{min-height:46px;border:1px solid var(--line);background:rgba(7,17,13,.9);color:var(--ink);font:inherit;font-size:.72rem;text-transform:uppercase;cursor:pointer}.selector button.active{border-color:var(--green);color:var(--green);box-shadow:inset 0 0 20px rgba(77,255,150,.08)}.selector button:disabled{opacity:.38;cursor:not-allowed}.proof{margin-top:12px;border:1px solid var(--line);padding:12px 14px;color:var(--muted);font-size:.78rem}.proof b{color:var(--cyan)}@media(max-width:760px){.wrap{width:min(100% - 16px,1080px);padding-top:8px}.top{align-items:flex-start}.stage{min-height:72vh}.selector{grid-template-columns:repeat(3,1fr)}}
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div class="brand">SPACEFROGS <b>// RUNTIME PROOF</b></div><div class="status" id="status">READY // NOT LOADED</div></div>
+  <section class="stage" aria-label="SPACEFROGS 3D model viewer">
+    <div id="viewport"></div>
+    <div class="hud"><span id="heroLabel">WIT // COMMAND</span><span>SIGNAL LOCKED</span></div>
+    <div class="load" id="loadGate"><button id="loadBtn">Tap to load 3D</button></div>
+    <div class="hint">DRAG TO ROTATE // PINCH OR SCROLL TO ZOOM</div>
+  </section>
+  <div class="selector" id="selector"></div>
+  <div class="proof"><b>PROOF BOUNDARY:</b> this page proves browser loading, framing, orbit and zoom for verified-present GLB files only. It does not claim final visual canon approval or production readiness. LUMA intentionally remains unavailable until a verified model exists.</div>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+
+const HEROES=[
+ {id:'wit',name:'WIT',role:'COMMAND',file:'wit.glb'},
+ {id:'patch',name:'PATCH',role:'TECH',file:'patch.glb'},
+ {id:'skip',name:'SKIP',role:'RECON',file:'skip.glb'},
+ {id:'bulwark',name:'BULWARK',role:'HEAVY',file:'bulwark_deluxe_hero_edition.glb'},
+ {id:'veil',name:'VEIL',role:'STEALTH',file:'veil.glb'},
+ {id:'luma',name:'LUMA',role:'SUPPORT',file:null},
+ {id:'volt',name:'VOLT',role:'SHOCK',file:'volt.glb'},
+ {id:'kelp',name:'KELP',role:'AQUATIC',file:'kelp.glb'},
+ {id:'echo',name:'ECHO',role:'SIGNAL RECON',file:'echo.glb'}
+];
+const viewport=document.getElementById('viewport'), statusEl=document.getElementById('status'), heroLabel=document.getElementById('heroLabel'), selector=document.getElementById('selector'), loadGate=document.getElementById('loadGate'), loadBtn=document.getElementById('loadBtn');
+let current=HEROES[0], renderer,scene,camera,controls,loader,root,raf,loaded=false;
+
+for(const hero of HEROES){const b=document.createElement('button');b.textContent=hero.file?hero.name:`${hero.name} // MISSING`;b.disabled=!hero.file;b.dataset.id=hero.id;if(hero.id===current.id)b.classList.add('active');b.onclick=()=>selectHero(hero,b);selector.appendChild(b)}
+
+function ensureThree(){if(renderer)return;renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;viewport.appendChild(renderer.domElement);scene=new THREE.Scene();camera=new THREE.PerspectiveCamera(38,1,.01,1000);controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.06;controls.autoRotate=true;controls.autoRotateSpeed=.55;controls.target.set(0,0,0);scene.add(new THREE.HemisphereLight(0xbfffe1,0x08110c,2.0));const key=new THREE.DirectionalLight(0x8effba,3.3);key.position.set(4,6,7);scene.add(key);const rim=new THREE.DirectionalLight(0x56e8ff,2.1);rim.position.set(-5,2,-4);scene.add(rim);loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);resize();addEventListener('resize',resize);tick()}
+function resize(){if(!renderer)return;const r=viewport.getBoundingClientRect();renderer.setSize(Math.max(1,r.width),Math.max(1,r.height),false);camera.aspect=Math.max(1,r.width)/Math.max(1,r.height);camera.updateProjectionMatrix();if(root)fit(root)}
+function clearModel(){if(!root)return;scene.remove(root);root.traverse(o=>{if(o.geometry)o.geometry.dispose?.();if(o.material){const ms=Array.isArray(o.material)?o.material:[o.material];ms.forEach(m=>m.dispose?.())}});root=null}
+function fit(obj){obj.updateWorldMatrix(true,true);const box=new THREE.Box3();const wb=new THREE.Box3();let measured=false;obj.traverse(o=>{if(!o.isMesh||o.visible===false||!o.geometry)return;if(!o.geometry.boundingBox)o.geometry.computeBoundingBox();if(!o.geometry.boundingBox)return;o.updateWorldMatrix(true,false);wb.copy(o.geometry.boundingBox).applyMatrix4(o.matrixWorld);box.union(wb);measured=true});if(!measured||box.isEmpty())box.setFromObject(obj);const center=new THREE.Vector3(),size=new THREE.Vector3();box.getCenter(center);box.getSize(size);obj.position.sub(center);obj.updateWorldMatrix(true,true);const hx=Math.max(size.x/2,.001),hy=Math.max(size.y/2,.001),hz=Math.max(size.z/2,.001);const rect=renderer.domElement.getBoundingClientRect(),aspect=Math.max(.1,rect.width/Math.max(1,rect.height));camera.aspect=aspect;const vFov=THREE.MathUtils.degToRad(camera.fov),hFov=2*Math.atan(Math.tan(vFov/2)*aspect),horiz=Math.hypot(hx,hz),depth=horiz,margin=innerWidth<760?1.05:1.12,dist=Math.max(hy/Math.tan(vFov/2)+depth,horiz/Math.tan(hFov/2)+depth)*margin;const dir=new THREE.Vector3(0,0.12,1).normalize();camera.position.copy(dir.multiplyScalar(dist));camera.near=Math.max(.01,Math.max(hx,hy,hz)*.02);camera.far=dist+Math.max(hx,hy,hz)*8;camera.updateProjectionMatrix();controls.target.set(0,0,0);controls.minDistance=Math.max(hx,hy,hz)*(innerWidth<760?.58:.72);controls.maxDistance=dist*2.2;controls.update()}
+async function loadCurrent(){ensureThree();clearModel();statusEl.textContent=`LOADING // ${current.name}`;loadGate.hidden=true;try{const gltf=await loader.loadAsync(`../assets/models/${current.file}`);root=gltf.scene.clone(true);scene.add(root);fit(root);statusEl.textContent=`MESH ONLINE // ${current.name}`;loaded=true}catch(err){console.error(err);statusEl.textContent=`LOAD FAILED // ${current.name}`;loadGate.hidden=false;loadBtn.textContent='Retry load 3D'}}
+function selectHero(hero,button){current=hero;heroLabel.textContent=`${hero.name} // ${hero.role}`;document.querySelectorAll('.selector button').forEach(x=>x.classList.remove('active'));button.classList.add('active');if(loaded)loadCurrent();else{statusEl.textContent=`READY // ${hero.name}`;loadBtn.textContent='Tap to load 3D'}}
+function tick(){controls?.update();renderer?.render(scene,camera);raf=requestAnimationFrame(tick)}
+loadBtn.addEventListener('click',loadCurrent);heroLabel.textContent=`${current.name} // ${current.role}`;
+</script>
+</body>
+</html>
