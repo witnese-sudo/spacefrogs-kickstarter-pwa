@@ -28,7 +28,7 @@ The WebP files retain the original 1122 × 1402 canvas and are delivery derivati
 - Mobile render: VERIFIED at 375 × 812 rendered viewport capture; no horizontal overflow (`document.body.scrollWidth` 360 at 375 CSS px).
 - Card crop and overlay legibility: VERIFIED for all five integrated artworks; embedded titles, unit headers and status footers remain readable.
 - Browser asset decode: VERIFIED; all five WebP files completed at natural size 1122 × 1402 with no browser warnings or errors.
-- Draft deploy preview: the four earlier assets were VERIFIED at `https://deploy-preview-11--grand-semifreddo-730b1d.netlify.app/#squad`; LUMA requires a refreshed deploy-preview check after this update is pushed.
+- Draft deploy preview: VERIFIED at `https://deploy-preview-11--grand-semifreddo-730b1d.netlify.app/#squad`; all five remote assets decoded, LUMA displayed `KEY ART VERIFIED`, no horizontal overflow was observed, and both desktop and mobile browser logs were clean.
 - Build/link checks: VERIFIED for the static-site validation commands recorded in the draft PR.
 - 3D runtime regression: VERIFIED read-only; this branch changes no `viewer/`, `assets/models/` or `migration/3d-viewer/` path.
 
