@@ -114,9 +114,12 @@
       },
       {
         "hero": "LUMA",
-        "file": null,
-        "sourceStatus": "MISSING",
-        "integrationStatus": "PENDING"
+        "file": "assets/images/hero-key-art-luma.webp",
+        "dimensions": "1122x1402",
+        "format": "WebP",
+        "sourceStatus": "OBSERVED",
+        "integrationStatus": "VERIFIED",
+        "modelStatus": "PENDING"
       }
     ]
   },
@@ -186,6 +189,6 @@
     "No standalone transparent SPACEFROGS/First Signal wordmark master was found in the searched Library or the empty 00_CANON_LOCKED Production Vault folder.",
     "No standalone transparent brand-emblem master was found; the package therefore does not invent or redraw one.",
     "The swamp/world asset is a verified biosphere reference board, not a clean cinematic landscape image.",
-    "LUMA has no verified key-art asset and remains explicitly MISSING/PENDING."
+    "LUMA key art is verified; the separate LUMA 3D model remains PENDING for web-runtime verification."
   ]
 }
