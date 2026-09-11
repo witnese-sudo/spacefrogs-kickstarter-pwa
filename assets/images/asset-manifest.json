@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "package": "spacefrogs-website-asset-pack",
+  "created": "2026-08-31",
+  "deploymentState": "integrated-on-staging-branch",
+  "siteChanges": {
+    "staging": true,
+    "live": false
+  },
+  "canonRules": {
+    "currentHeroRoster": [
+      "WIT",
+      "PATCH",
+      "SKIP",
+      "BULWARK",
+      "VEIL",
+      "LUMA",
+      "VOLT",
+      "KELP",
+      "ECHO"
+    ],
+    "excludedLegacyCharacters": [
+      "JUKE",
+      "LUXA",
+      "TOX"
+    ],
+    "contentPolicy": "Only selected Library originals containing the current nine-hero roster or canon-neutral world/gameplay material were used. No generative edits were made."
+  },
+  "selectedOriginals": [
+    {
+      "id": "genesis-edition",
+      "libraryTitle": "Spacefrogs: First Signal - Genesis Edition.png",
+      "packageFile": "originals/spacefrogs-first-signal-genesis-edition-original.png",
+      "includedInRepository": false,
+      "dimensions": "1536x1024",
+      "canonUse": "Genesis Edition box, boardgame universe and metallic First Signal wordmark"
+    },
+    {
+      "id": "game-launch",
+      "libraryTitle": "Spacefrogs: First Signal game launch.png",
+      "packageFile": "originals/spacefrogs-first-signal-game-launch-original.png",
+      "includedInRepository": false,
+      "dimensions": "1535x1024",
+      "canonUse": "Aura Nova base and current boardgame presentation"
+    },
+    {
+      "id": "hero-roster",
+      "libraryTitle": "Spacefrogs: Heroes of the swamp(1).png",
+      "packageFile": "originals/spacefrogs-heroes-of-the-swamp-nine-original.png",
+      "includedInRepository": false,
+      "dimensions": "1672x941",
+      "canonUse": "Verified nine-hero roster, Aura Nova, Cannonfungies and Slime Toads"
+    },
+    {
+      "id": "signal-fracture",
+      "libraryTitle": "SpaceFrogs: Signal Fracture-kortet.png",
+      "packageFile": "originals/spacefrogs-signal-fracture-map-original.png",
+      "includedInRepository": false,
+      "dimensions": "1254x1254",
+      "canonUse": "Battlefield and gameplay layout"
+    },
+    {
+      "id": "genesis-biosphere",
+      "libraryTitle": "Spacefrogs: Genesis Biosfærebræt.png",
+      "packageFile": "originals/spacefrogs-genesis-biosphere-board-original.png",
+      "includedInRepository": false,
+      "dimensions": "1536x1024",
+      "canonUse": "Genesis world, biomes, flora and fauna"
+    }
+  ],
+  "websiteAssets": [
+    {
+      "section": "hero/roster",
+      "file": "assets/images/hero-roster-nine.webp",
+      "sourceId": "hero-roster",
+      "dimensions": "1672x941",
+      "purpose": "Primary wide roster artwork showing all nine current heroes"
+    },
+    {
+      "section": "Genesis Box",
+      "file": "assets/images/genesis-box.webp",
+      "sourceId": "genesis-edition",
+      "dimensions": "566x520",
+      "purpose": "Focused Genesis Edition box crop"
+    },
+    {
+      "section": "Aura Nova",
+      "file": "assets/images/aura-nova-base.webp",
+      "sourceId": "game-launch",
+      "dimensions": "650x475",
+      "purpose": "Focused Aura Nova battlefield crop"
+    },
+    {
+      "section": "battlefield/gameplay",
+      "file": "assets/images/battlefield-gameplay.webp",
+      "sourceId": "signal-fracture",
+      "dimensions": "1254x1254",
+      "purpose": "Signal Fracture alpha-test battlefield overview"
+    },
+    {
+      "section": "swamp/world",
+      "file": "assets/images/genesis-swamp-world.webp",
+      "sourceId": "genesis-biosphere",
+      "dimensions": "1536x1024",
+      "purpose": "Genesis Biosphere world and ecology overview"
+    },
+    {
+      "section": "enemies",
+      "file": "assets/images/enemies-cannonfungies-slime-toads.webp",
+      "sourceId": "hero-roster",
+      "dimensions": "1082x370",
+      "purpose": "Verified Cannonfungies and Slime Toads crop"
+    }
+  ],
+  "logoAssets": [
+    {
+      "role": "primary First Signal wordmark",
+      "file": "assets/images/spacefrogs-first-signal-wordmark-metallic-on-black.webp",
+      "sourceId": "genesis-edition",
+      "dimensions": "455x130",
+      "background": "black",
+      "status": "canon crop; not a transparent master"
+    },
+    {
+      "role": "alternate First Signal wordmark",
+      "file": "assets/images/spacefrogs-first-signal-wordmark-cyan-on-black.webp",
+      "sourceId": "hero-roster",
+      "dimensions": "725x145",
+      "background": "black",
+      "status": "canon crop; not a transparent master"
+    }
+  ],
+  "verificationGaps": [
+    "No standalone transparent SPACEFROGS/First Signal wordmark master was found in the searched Library or the empty 00_CANON_LOCKED Production Vault folder.",
+    "No standalone transparent brand-emblem master was found; the package therefore does not invent or redraw one.",
+    "The swamp/world asset is a verified biosphere reference board, not a clean cinematic landscape image."
+  ]
+}
