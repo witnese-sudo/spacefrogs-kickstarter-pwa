@@ -68,6 +68,61 @@
       "canonUse": "Genesis world, biomes, flora and fauna"
     }
   ],
+  "generatedHeroKeyArt": {
+    "sourceConversation": {
+      "title": "SPACEFROGS Live Watch",
+      "conversationId": "6a8b9d5b-6f70-83ed-bcb1-3883d773c612",
+      "observed": "2026-09-01",
+      "status": "OBSERVED"
+    },
+    "deploymentState": {
+      "staging": true,
+      "live": false
+    },
+    "assets": [
+      {
+        "hero": "PATCH",
+        "file": "assets/images/hero-key-art-patch.webp",
+        "dimensions": "1122x1402",
+        "format": "WebP",
+        "sourceStatus": "OBSERVED",
+        "integrationStatus": "VERIFIED"
+      },
+      {
+        "hero": "SKIP",
+        "file": "assets/images/hero-key-art-skip.webp",
+        "dimensions": "1122x1402",
+        "format": "WebP",
+        "sourceStatus": "OBSERVED",
+        "integrationStatus": "VERIFIED"
+      },
+      {
+        "hero": "BULWARK",
+        "file": "assets/images/hero-key-art-bulwark.webp",
+        "dimensions": "1122x1402",
+        "format": "WebP",
+        "sourceStatus": "OBSERVED",
+        "integrationStatus": "VERIFIED"
+      },
+      {
+        "hero": "VEIL",
+        "file": "assets/images/hero-key-art-veil.webp",
+        "dimensions": "1122x1402",
+        "format": "WebP",
+        "sourceStatus": "OBSERVED",
+        "integrationStatus": "VERIFIED"
+      },
+      {
+        "hero": "LUMA",
+        "file": "assets/images/hero-key-art-luma.webp",
+        "dimensions": "1122x1402",
+        "format": "WebP",
+        "sourceStatus": "OBSERVED",
+        "integrationStatus": "VERIFIED",
+        "modelStatus": "PENDING"
+      }
+    ]
+  },
   "websiteAssets": [
     {
       "section": "hero/roster",
@@ -133,6 +188,7 @@
   "verificationGaps": [
     "No standalone transparent SPACEFROGS/First Signal wordmark master was found in the searched Library or the empty 00_CANON_LOCKED Production Vault folder.",
     "No standalone transparent brand-emblem master was found; the package therefore does not invent or redraw one.",
-    "The swamp/world asset is a verified biosphere reference board, not a clean cinematic landscape image."
+    "The swamp/world asset is a verified biosphere reference board, not a clean cinematic landscape image.",
+    "LUMA key art is verified; the separate LUMA 3D model remains PENDING for web-runtime verification."
   ]
 }
